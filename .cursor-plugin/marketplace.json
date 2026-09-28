@@ -1,0 +1,17 @@
+{
+  "name": "brandwell",
+  "owner": {
+    "name": "BrandWell"
+  },
+  "metadata": {
+    "description": "BrandWell for Cursor: BrandWell skills and MCP server.",
+    "version": "0.3.0"
+  },
+  "plugins": [
+    {
+      "name": "brandwell",
+      "source": "cursor/brandwell",
+      "description": "BrandWell skills and MCP tools for your BrandWell projects: AI and search visibility, keyword research, content, links, outreach, direct mail, MarketPulse and TrafficID. Signs in through your browser, no API key needed."
+    }
+  ]
+}

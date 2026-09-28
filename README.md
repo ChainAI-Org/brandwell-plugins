@@ -1,6 +1,6 @@
-# BrandWell plugins for Claude Code and Codex
+# BrandWell plugins for Claude Code, Codex and Cursor
 
-BrandWell's skills and MCP server as plugins for Claude Code and Codex. They let your AI work in your BrandWell projects: AI and search visibility, keyword research, content, links, outreach, direct mail, MarketPulse and TrafficID. You need a BrandWell account.
+BrandWell's skills and MCP server as plugins for Claude Code, Codex and Cursor. They let your AI work in your BrandWell projects: AI and search visibility, keyword research, content, links, outreach, direct mail, MarketPulse and TrafficID. You need a BrandWell account.
 
 ## Install
 
@@ -17,6 +17,8 @@ Codex:
 ```
 codex plugin marketplace add ChainAI-Org/brandwell-plugins && codex plugin add brandwell@brandwell
 ```
+
+Cursor: open Customize, find BrandWell in the marketplace and click Install. Until it is listed there, copy `cursor/brandwell/` to `~/.cursor/plugins/local/brandwell` and reload Cursor.
 
 ## Sign in
 
@@ -45,6 +47,8 @@ codex mcp add brandwell --url https://portal.brandwell.ai/mcp --bearer-token-env
 - `codex/brandwell/`: BrandWell for Codex
 - `claude-code/brandwell-api-key/`: BrandWell (API key) for Claude Code
 - `codex/brandwell-api-key/`: BrandWell (API key) for Codex
-- `.claude-plugin/marketplace.json` and `.agents/plugins/marketplace.json`: the marketplace files for each client
+- `cursor/brandwell/`: BrandWell for Cursor
+- `.claude-plugin/marketplace.json`, `.agents/plugins/marketplace.json` and `.cursor-plugin/marketplace.json`: the marketplace files for each client
+- `server.json`: BrandWell's MCP server for the MCP Registry
 
 This repository is built from BrandWell's portal source; changes made here by hand are overwritten by the next release. See CHANGELOG.md for what changed in each version.

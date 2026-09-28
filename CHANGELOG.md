@@ -2,6 +2,11 @@
 
 The BrandWell plugins for Claude Code and Codex share one version.
 
+## 0.3.0 (2026-09-29)
+
+- BrandWell for Cursor, with the same skills and MCP server. You sign in through the browser.
+- A server.json file lists BrandWell's MCP server in the MCP Registry.
+
 ## 0.2.0 (2026-09-28)
 
 - Sign in with your BrandWell account in the browser. The plugins no longer need an API key.

@@ -1,0 +1,21 @@
+{
+  "name": "brandwell",
+  "owner": {
+    "name": "BrandWell",
+    "url": "https://brandwell.ai"
+  },
+  "description": "BrandWell for Claude Code: BrandWell skills and MCP server. Install BrandWell, or BrandWell (API key) on a machine without a browser.",
+  "version": "0.2.0",
+  "plugins": [
+    {
+      "name": "brandwell",
+      "source": "./claude-code/brandwell",
+      "description": "BrandWell skills and MCP tools for your BrandWell projects: AI and search visibility, keyword research, content, links, outreach, direct mail, MarketPulse and TrafficID. Signs in through your browser, no API key needed."
+    },
+    {
+      "name": "brandwell-api-key",
+      "source": "./claude-code/brandwell-api-key",
+      "description": "BrandWell skills and MCP tools for your BrandWell projects (AI and search visibility, keyword research, content, links, outreach, direct mail, MarketPulse and TrafficID), connected with a project API key instead of a browser sign-in. For machines without a browser; otherwise install BrandWell."
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "brandwell",
+  "interface": {
+    "displayName": "BrandWell"
+  },
+  "plugins": [
+    {
+      "name": "brandwell",
+      "source": {
+        "source": "local",
+        "path": "./codex/brandwell"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "brandwell-api-key",
+      "source": {
+        "source": "local",
+        "path": "./codex/brandwell-api-key"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

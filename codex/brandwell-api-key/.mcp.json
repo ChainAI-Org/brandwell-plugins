@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "brandwell-api-key": {
+      "url": "https://portal.brandwell.ai/mcp",
+      "bearer_token_env_var": "BRANDWELL_MCP_TOKEN"
+    }
+  }
+}

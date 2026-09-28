@@ -1,0 +1,13 @@
+# Changelog
+
+The BrandWell plugins for Claude Code and Codex share one version.
+
+## 0.2.0 (2026-09-28)
+
+- Sign in with your BrandWell account in the browser. The plugins no longer need an API key.
+- When you sign in, you choose which projects the AI may use.
+- Project API keys still work for scripts and machines without a browser. See the README.
+
+## 0.1.0 (2026-09-23)
+
+- First release: BrandWell skills and the BrandWell MCP server for Claude Code and Codex, connected with a project API key.

@@ -1,6 +1,6 @@
 {
   "name": "brandwell-api-key",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "BrandWell skills and MCP tools for your BrandWell projects (AI and search visibility, keyword research, content, links, outreach, direct mail, MarketPulse and TrafficID), connected with a project API key instead of a browser sign-in. For machines without a browser; otherwise install BrandWell.",
   "author": {
     "name": "BrandWell",

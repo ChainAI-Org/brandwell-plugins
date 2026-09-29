@@ -2,6 +2,10 @@
 
 The BrandWell plugins for Claude Code and Codex share one version.
 
+## 0.3.1 (2026-09-29)
+
+- Skills updated to match BrandWell (4e57997d815d).
+
 ## 0.3.0 (2026-09-29)
 
 - BrandWell for Cursor, with the same skills and MCP server. You sign in through the browser.

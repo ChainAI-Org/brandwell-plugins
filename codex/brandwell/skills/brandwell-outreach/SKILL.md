@@ -56,6 +56,7 @@ Following up on engagement (an open, a click or a reply from a campaign, or an a
 3. When an instruction asks for several actions (a like, a comment, a connection request), track which ones completed. Never repeat a completed one when continuing, and skip a conditional action when its condition is not met.
 
 Rules:
+- Confirm facts with this skill's tools before stating them; what the page shows is a starting point, not the answer. When no tool can confirm something, say so and offer BrandWell support. Never say BrandWell cannot do something unless a tool says so.
 - A draft never sends and never starts a campaign. Sending a test, starting or resuming it, enrolling people and turning on a feed into it are separate steps, and each needs the person's confirmation first.
 - Add only contacts the person supplied or approved, with their email.
 - Adding contacts never sends email by itself; say whether a feed will pick up the tag.

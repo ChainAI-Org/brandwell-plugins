@@ -36,3 +36,4 @@ RankWell data and safety rules:
 - After a timeout or uncertain response, use list_rankwell_generation_jobs before retrying. Preserve an explicit request_key when retrying the same request. Never start duplicate paid work to check status.
 - Keyword targets and usage ranges come from BrandWell's content analysis. Preserve the returned targets and counts. Do not substitute a generated keyword list.
 - After completion, read the article and report its BrandWell ID, draft status, SEO score, keyword coverage, featured image, evidence gaps, and next review step. Keep saved draft text and image warnings distinct. Never claim completion without the returned result.
+- Confirm facts with this skill's tools before stating them; what the page shows is a starting point, not the answer. When no tool can confirm something, say so and offer BrandWell support. Never say BrandWell cannot do something unless a tool says so.

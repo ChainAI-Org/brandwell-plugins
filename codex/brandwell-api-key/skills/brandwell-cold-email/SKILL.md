@@ -181,5 +181,7 @@ Use supplied facts only. Never invent research, clients, results, or personaliza
 
 To rewrite a saved campaign's emails, read it with outreach_campaign and save the new copy with outreach_update_steps, naming each email by its number; it checks and previews every email and never sends. Drafting does not authorize activating a campaign or sending. Initial drafting may use BrandWell's own writing model. Per-contact research and automated AI steps need the client's own AI model key, connected in BrandWell.
 
+Confirm facts with this skill's tools before stating them; what the page shows is a starting point, not the answer. When no tool can confirm something, say so and offer BrandWell support. Never say BrandWell cannot do something unless a tool says so.
+
 Source: https://github.com/coreyhaines31/marketingskills/tree/f86637eace00fe4df586680bb0cda89990da6138/skills/cold-email
 License: MIT. Adapted for BrandWell campaign rendering and punctuation.

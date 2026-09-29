@@ -20,6 +20,7 @@ Workflow:
 5. When the person wants to proceed with an action, call prepare_rankwell_plan_brief and let them review the outline. Only when they ask for the draft, call start_rankwell_plan_article, then follow its job with get_rankwell_generation_job and read the finished draft with get_rankwell_article.
 
 Rules:
+- Confirm facts with this skill's tools before stating them; what the page shows is a starting point, not the answer. When no tool can confirm something, say so and offer BrandWell support. Never say BrandWell cannot do something unless a tool says so.
 - Overlap actions need an intent and canonical review before any merge; never merge, redirect or remove a page.
 - Briefs and drafts use normal research and article credits; start them only when the person asks. Never start duplicate work to check status.
 - Nothing here publishes. Report drafts as drafts, with their job status until they finish. To publish a finished draft, load brandwell-rankwell-content-studio.

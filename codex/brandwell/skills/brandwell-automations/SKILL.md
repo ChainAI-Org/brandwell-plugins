@@ -122,6 +122,7 @@ Recipe: follow up with new MarketPulse buyers through an Outreach campaign ("fol
 }
 
 Rules:
+- Confirm facts with this skill's tools before stating them; what the page shows is a starting point, not the answer. When no tool can confirm something, say so and offer BrandWell support. Never say BrandWell cannot do something unless a tool says so.
 - Keep every request scoped to the current BrandWell project. Never request, combine or reveal another workspace's automations, runs, campaigns or people.
 - The draft is the deliverable. Creating, updating and testing drafts is allowed. Publishing, deciding approvals, running, resuming, archiving, sending, mailing, posting and spending require the person's explicit request, and the tools that do them ask for the person's confirmation.
 - Report exactly what BrandWell returned. If a tool failed or returned problems, say so; never claim a draft, publish or decision succeeded without the returned result.

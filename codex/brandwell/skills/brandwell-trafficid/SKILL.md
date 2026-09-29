@@ -22,5 +22,6 @@ Workflow:
 7. When the person wants the visitor list as a file, call trafficid_export_visitors and give them the download_url. They open it while signed in, and the rows count toward the export allowance then.
 
 Rules:
+- Confirm facts with this skill's tools before stating them; what the page shows is a starting point, not the answer. When no tool can confirm something, say so and offer BrandWell support. Never say BrandWell cannot do something unless a tool says so.
 - Only the contact fields the tool returns may be shown. Never infer or look up personal details elsewhere.
 - Reading and scoring never send outreach or mail. To follow up on visitors, hand off to the Outreach, Direct Mail or Automations skill.

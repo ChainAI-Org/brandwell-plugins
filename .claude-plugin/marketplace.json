@@ -5,7 +5,7 @@
     "url": "https://brandwell.ai"
   },
   "description": "BrandWell for Claude Code: BrandWell skills and MCP server. Install BrandWell, or BrandWell (API key) on a machine without a browser.",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "plugins": [
     {
       "name": "brandwell",

@@ -1,7 +1,7 @@
 ---
 name: brandwell-marketpulse
 description: "Find in-market buyers with MarketPulse: build the ICP from who the client sells to, search buyer intent, read the newest buyers from the client's feeds, review the audiences and pulls in progress, narrow them by a saved ICP, add, activate, refresh or pause intent feeds, download a feed's buyers, generate, read and share Demand Scans, and check plan usage. Use when the person says who they sell to, asks who is researching a topic, who is in market, about their feeds, ICPs, Demand Scans or MarketPulse limits."
-allowed-tools: marketpulse_suggest_icp marketpulse_create_icp marketpulse_list_icps marketpulse_list_feeds marketpulse_list_audiences marketpulse_guarantee marketpulse_get_usage intent_search intent_get_daily_buyers marketpulse_set_default_icp marketpulse_search_topics marketpulse_create_feed marketpulse_update_feed marketpulse_pause_feed marketpulse_export_audience marketpulse_list_demand_scans marketpulse_get_demand_scan marketpulse_generate_demand_scan marketpulse_demand_scan_link marketpulse_email_demand_scan
+allowed-tools: marketpulse_suggest_icp marketpulse_create_icp marketpulse_list_icps marketpulse_list_feeds marketpulse_list_audiences marketpulse_guarantee marketpulse_get_usage intent_search intent_get_daily_buyers marketpulse_set_default_icp marketpulse_search_topics marketpulse_create_feed marketpulse_update_feed marketpulse_pause_feed marketpulse_export_audience marketpulse_list_demand_scans marketpulse_get_demand_scan marketpulse_generate_demand_scan marketpulse_demand_scan_link marketpulse_email_demand_scan account_plan_status
 metadata:
   title: "BrandWell MarketPulse"
   service: marketpulse
@@ -47,3 +47,4 @@ Rules:
 - Reading buyers never contacts them. To act on buyers, hand off to the Outreach, Direct Mail or Automations skill.
 - Spend and sends wait for the person's confirmation card: activating, refreshing or scheduling a feed, and emailing a Demand Scan.
 - Refunds and support: call marketpulse_guarantee. Answer from its guarantee (window, conditions, terms link, how to ask) and support_email exactly as returned, and say whether their purchase still qualifies from purchase (window_open, topic_pulls, exports, verdict). A null field means BrandWell has not set it: say you do not have it and offer support. Never state or guess terms or eligibility.
+- Plan status: call account_plan_status when the person asks when their plan renews or ends, or whether it is cancelled. Answer from its state, ends_at and renews_at exactly as returned, and if can_keep is true say they can reverse the cancellation with Keep My Subscription in Billing. Never guess a date.

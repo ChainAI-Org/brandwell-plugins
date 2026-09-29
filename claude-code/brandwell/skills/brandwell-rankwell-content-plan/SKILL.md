@@ -1,7 +1,7 @@
 ---
 name: brandwell-rankwell-content-plan
 description: "Plan what to write next in RankWell: discover topic maps, choose topics, read and manage the prioritized content plan and its calendar, and turn a plan action into a brief or a draft. Use when the person asks what content to create or update, about their content plan or calendar, or to research topics."
-allowed-tools: whoami list_rankwell_topic_maps discover_rankwell_topics select_rankwell_topic get_rankwell_plan save_rankwell_plan_action prepare_rankwell_plan_brief start_rankwell_plan_article get_rankwell_generation_job get_rankwell_article
+allowed-tools: whoami list_rankwell_topic_maps discover_rankwell_topics select_rankwell_topic get_rankwell_plan save_rankwell_plan_action prepare_rankwell_plan_brief start_rankwell_plan_article get_rankwell_generation_job get_rankwell_article account_plan_status
 metadata:
   title: "BrandWell RankWell Content Plan"
   service: rankwell
@@ -24,3 +24,4 @@ Rules:
 - Overlap actions need an intent and canonical review before any merge; never merge, redirect or remove a page.
 - Briefs and drafts use normal research and article credits; start them only when the person asks. Never start duplicate work to check status.
 - Nothing here publishes. Report drafts as drafts, with their job status until they finish. To publish a finished draft, load brandwell-rankwell-content-studio.
+- Plan status: call account_plan_status when the person asks when their plan renews or ends, or whether it is cancelled. Answer from its state, ends_at and renews_at exactly as returned, and if can_keep is true say they can reverse the cancellation with Keep My Subscription in Billing. Never guess a date.

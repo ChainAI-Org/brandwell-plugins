@@ -13,7 +13,7 @@ metadata:
 Goal: explain where the brand appears in AI search, which project pages earn citations, and what evidence-backed work could improve discoverability.
 
 Workflow:
-1. Call whoami and get_ai_citations. Historical citation lookup targets a brand or domain, so use the canonical domain and saved competitors unless the user supplies another brand or domain. Never pass a buyer keyword as the historical lookup target. Filter the returned questions for topic relevance instead.
+1. Call whoami and get_ai_citations. Historical citation lookup targets a brand or domain, so use the canonical domain and saved competitors unless the user supplies another brand name. A domain must be the project's or a saved competitor's. Never pass a buyer keyword as the historical lookup target. Filter the returned questions for topic relevance instead.
 2. Explain that historical citation discovery and live prompt testing are different datasets. Report fetched time, market scope, platform coverage, missing metrics, and the exact questions and sources returned by the citation index.
 3. Rank questions and cited pages by mentions and known AI search volume. Group them by page type, topic, buyer intent, and whether the canonical domain is cited.
 4. Identify coverage gaps by comparing cited topics with the business goal, Search Console queries, saved keywords, and the project's important offers. Use get_search_console_performance and list_saved_keywords when those comparisons help.

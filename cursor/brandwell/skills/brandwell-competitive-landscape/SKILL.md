@@ -16,7 +16,7 @@ Workflow:
 1. Call whoami and get_visibility_overview. Use the stored competitor list as the starting roster and confirm which competitors matter to the user.
 2. Anchor the project's own position with get_search_console_performance, get_rank_tracking, and AI visibility evidence from get_visibility_overview.
 3. Use get_serp_results for a representative query set. Group recurring winners as direct competitors, publishers, directories, marketplaces, communities, or unrelated domains.
-4. Call get_domain_overview for the three to five strongest recurring domains, then get_domain_keywords for direct competitors that warrant deeper theme analysis. Use get_backlinks_overview only when authority may explain the gap.
+4. Call get_domain_overview for up to five of the strongest recurring domains that are saved competitors, then get_domain_keywords for direct competitors that warrant deeper theme analysis. Domain research covers the project's site and its saved competitors only: name any other strong domain and suggest adding it as a competitor in Project Settings. Use get_backlinks_overview only when authority may explain the gap.
 5. Compare measured organic footprint, ranking themes, visible content types, positioning, link authority, and AI citation patterns. Label estimates, first-party evidence, and public observations separately.
 6. Return the query set, recurring domains, why each wins, the project's current evidence, underserved angles, and the top three actions.
 

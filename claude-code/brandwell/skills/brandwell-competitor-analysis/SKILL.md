@@ -13,7 +13,7 @@ metadata:
 Goal: turn one competitor comparison into a practical page, content, distribution, or citation plan.
 
 Workflow:
-1. Call whoami and confirm the competitor domain, market, comparison goal, and whether it appears in the stored competitor list.
+1. Call whoami and confirm the competitor domain, market, comparison goal, and whether it appears in the stored competitor list. Domain research covers the project's site and its saved competitors only, so when the competitor is not saved, ask the person to add it as a competitor in Project Settings first.
 2. Build the Company's baseline from get_search_console_performance, get_visibility_overview, get_rank_tracking, and get_analytics_summary as relevant.
 3. Call get_domain_overview, get_domain_keywords, and get_domain_pages for the competitor. Use get_backlinks_overview when authority matters and get_serp_results for the most important shared terms.
 4. Inspect the competitor's public pages before making content-depth, positioning, structured-data, or page-type claims. Third-party market estimates are not the competitor's private analytics or conversion data.

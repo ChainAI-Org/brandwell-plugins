@@ -1,7 +1,7 @@
 ---
 name: brandwell-trafficid
 description: "Read TrafficID's identified website visitors, one visitor's full detail and the site's form completions, score visitors against a saved ICP, and download the visitor list. Use when the person asks who visited the site, which companies or people are showing interest, who filled in a form, or whether a visitor fits their ICP."
-allowed-tools: trafficid_get_visitors trafficid_get_visitor trafficid_qualify_visitor trafficid_list_form_fillouts trafficid_export_visitors marketpulse_list_icps account_plan_status
+allowed-tools: trafficid_get_visitors trafficid_get_new_visitor_count trafficid_get_visitor trafficid_qualify_visitor trafficid_list_form_fillouts trafficid_export_visitors marketpulse_list_icps account_plan_status
 metadata:
   title: "BrandWell TrafficID"
   service: trafficid
@@ -22,6 +22,7 @@ Workflow:
 7. When the person wants the visitor list as a file, call trafficid_export_visitors and give them the download_url. They open it while signed in, and the rows count toward the export allowance then.
 
 Rules:
+- For counts of newly recorded visitors between two timestamps, use trafficid_get_new_visitor_count with since and until. It reads retained, plan-admitted events without reading profiles or recording exports or usage. If complete is false, say "at least" before the count; if available is false, say the count is unavailable. This is newly recorded data, not proof of what someone viewed or a lifetime first visit.
 - Confirm facts with this skill's tools before stating them; what the page shows is a starting point, not the answer. When no tool can confirm something, say so and offer BrandWell support. Never say BrandWell cannot do something unless a tool says so.
 - Only the contact fields the tool returns may be shown. Never infer or look up personal details elsewhere.
 - Reading and scoring never send outreach or mail. To follow up on visitors, hand off to the Outreach, Direct Mail or Automations skill.

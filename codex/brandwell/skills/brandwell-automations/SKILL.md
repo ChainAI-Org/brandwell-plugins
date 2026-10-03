@@ -22,7 +22,7 @@ Workflow:
    - A connection request without a note, a profile visit, a like or a follow goes in aimee.ask.
    - Engaging with a SocialStreams post goes in aimee.engage_social_result.
    Every step acts on the record the trigger starts the run on (see "Records and people" below). Build the first draft so it already fits:
-   - New MarketPulse buyers into an Outreach campaign: use the recipe below (marketpulse.batch.delivered, then marketpulse.enroll_in_outreach_campaign). Do not put outreach.enroll_contacts after a feed trigger.
+   - New people from MarketPulse into an Outreach campaign: use the recipe below (marketpulse.batch.delivered, then marketpulse.enroll_in_outreach_campaign). Do not put outreach.enroll_contacts after a feed trigger.
    - A company trigger (trafficid.company.surge, marketpulse.account.matched, trafficid.stakeholders.ready) keeps the company as its record, and no step changes it, so a person step after it cannot run. Choose a trigger whose record is a person instead, and say so in one sentence.
 5. Approval: set approval "approval_required" on the automation, or on each step tagged sends or spend (enrolling, mailing, posting, connection requests), unless the person said sends may go out on their own. Reads, research and drafting can be "auto". When the person says steps may run without approval, set approval "auto" on those steps (or on the automation): BrandWell keeps that choice and lists them as runs_without_approval, so say which steps run on their own. A sending or spending step left to inherit under an automation that is not "auto" is set to "approval_required" for you.
 6. Name things instead of guessing ids: { "campaign_id": { "name": "XYZ Outreach" } } and { "icp_id": { "name": "Enterprise buyers" } }. BrandWell resolves them and reports anything ambiguous or missing as problems.
@@ -100,14 +100,14 @@ Then: create the draft, read back the summary and problems (an ABC campaign that
 
 Each step acts on the record the trigger starts the run on, from the first step to the last. No step changes that record: trafficid.find_stakeholders returns people as a list output, and the run still acts on the company. So a person step (outreach.enroll_contacts, direct_mail.mail_postcard, aimee.write_and_send) needs a trigger whose record is a person. When a problem says a step acts on a person but the automation runs on something else, use the option it offers; never put a stakeholder step in front of a person step to fix it.
 
-Recipe: follow up with new MarketPulse buyers through an Outreach campaign ("follow up with new MarketPulse buyers using my Q3 campaign", "enroll each new intent batch in Outreach").
+Recipe: follow up with new people from MarketPulse through an Outreach campaign ("follow up with new MarketPulse buyers using my Q3 campaign", "enroll each new intent batch in Outreach").
 - The trigger is marketpulse.batch.delivered (New intent records delivered), with the filter new_people gt 0. Its record is the delivery, not a person. MarketPulse delivers people with their emails, so no stakeholder lookup is needed.
 - The step is marketpulse.enroll_in_outreach_campaign (Enroll delivered people in an Outreach campaign) with the campaign named. It enrolls everyone in the delivery, up to 2,000 a run, and skips people already in the campaign, suppressed or without an email. Never follow this trigger with outreach.enroll_contacts.
 - Choose the MarketPulse step by what the person names. They name an Outreach campaign ("my Q3 campaign", "enroll them in", "follow up with them"): marketpulse.enroll_in_outreach_campaign with campaign_id, which puts the people in that campaign's sequence. They name an Outreach intake list, source or tag ("add them to my intent-leads list", "tag them abm-intent"): marketpulse.send_to_outreach with source_id, which only adds them to that list and enrolls no one; a feed set up in Outreach decides whether that list goes into a campaign. When they name neither, ask which campaign.
 - For a postcard to each delivered person, the step is marketpulse.send_to_postcard_campaign.
 - When the person said it runs without approval, set approval "auto" on the automation.
 {
-  "name": "New MarketPulse buyers to the Q3 campaign",
+  "name": "New people from MarketPulse to the Q3 campaign",
   "approval": "auto",
   "trigger": {
     "event": "marketpulse.batch.delivered",

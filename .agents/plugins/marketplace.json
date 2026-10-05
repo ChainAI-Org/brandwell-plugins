@@ -5,10 +5,10 @@
   },
   "plugins": [
     {
-      "name": "brandwell",
+      "name": "brandwell-visibility",
       "source": {
         "source": "local",
-        "path": "./codex/brandwell"
+        "path": "./codex/brandwell-visibility"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -17,14 +17,86 @@
       "category": "Productivity"
     },
     {
-      "name": "brandwell-api-key",
+      "name": "brandwell-rankwell",
       "source": {
         "source": "local",
-        "path": "./codex/brandwell-api-key"
+        "path": "./codex/brandwell-rankwell"
       },
       "policy": {
         "installation": "AVAILABLE",
-        "authentication": "ON_USE"
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "brandwell-link-builder",
+      "source": {
+        "source": "local",
+        "path": "./codex/brandwell-link-builder"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "brandwell-marketpulse",
+      "source": {
+        "source": "local",
+        "path": "./codex/brandwell-marketpulse"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "brandwell-outreach",
+      "source": {
+        "source": "local",
+        "path": "./codex/brandwell-outreach"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "brandwell-direct-mail",
+      "source": {
+        "source": "local",
+        "path": "./codex/brandwell-direct-mail"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "brandwell-trafficid",
+      "source": {
+        "source": "local",
+        "path": "./codex/brandwell-trafficid"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "brandwell-socialstreams",
+      "source": {
+        "source": "local",
+        "path": "./codex/brandwell-socialstreams"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
       },
       "category": "Productivity"
     }

@@ -4,18 +4,48 @@
     "name": "BrandWell",
     "url": "https://brandwell.ai"
   },
-  "description": "BrandWell for Claude Code: BrandWell skills and MCP server. Install BrandWell, or BrandWell (API key) on a machine without a browser.",
-  "version": "0.3.12",
+  "description": "BrandWell for Claude Code: BrandWell skills and MCP server, one plugin per product. Install the products you use.",
+  "version": "0.4.0",
   "plugins": [
     {
-      "name": "brandwell",
-      "source": "./claude-code/brandwell",
-      "description": "BrandWell skills and MCP tools for your BrandWell projects: AI and search visibility, keyword research, content, links, outreach, direct mail, MarketPulse and TrafficID. Signs in through your browser, no API key needed."
+      "name": "brandwell-visibility",
+      "source": "./claude-code/brandwell-visibility",
+      "description": "BrandWell Visibility skills and MCP tools: AI and search visibility, keyword research, site audits, competitors, AI citations and local search. Signs in through your browser."
     },
     {
-      "name": "brandwell-api-key",
-      "source": "./claude-code/brandwell-api-key",
-      "description": "BrandWell skills and MCP tools for your BrandWell projects (AI and search visibility, keyword research, content, links, outreach, direct mail, MarketPulse and TrafficID), connected with a project API key instead of a browser sign-in. For machines without a browser; otherwise install BrandWell."
+      "name": "brandwell-rankwell",
+      "source": "./claude-code/brandwell-rankwell",
+      "description": "BrandWell RankWell skills and MCP tools: plan what to write next, then create, refine and publish briefs and articles. Signs in through your browser."
+    },
+    {
+      "name": "brandwell-link-builder",
+      "source": "./claude-code/brandwell-link-builder",
+      "description": "BrandWell Link Builder skills and MCP tools: set up and review link campaigns and find link and citation prospects. Signs in through your browser."
+    },
+    {
+      "name": "brandwell-marketpulse",
+      "source": "./claude-code/brandwell-marketpulse",
+      "description": "BrandWell MarketPulse skills and MCP tools: find the people researching what you sell, manage your ICP, topics and pulls, and share Demand Scans. Signs in through your browser."
+    },
+    {
+      "name": "brandwell-outreach",
+      "source": "./claude-code/brandwell-outreach",
+      "description": "BrandWell Outreach skills and MCP tools: email campaigns, feeds and contacts, and cold emails that get replies. Signs in through your browser."
+    },
+    {
+      "name": "brandwell-direct-mail",
+      "source": "./claude-code/brandwell-direct-mail",
+      "description": "BrandWell Direct Mail skills and MCP tools: draft, schedule and run postcard campaigns. Signs in through your browser."
+    },
+    {
+      "name": "brandwell-trafficid",
+      "source": "./claude-code/brandwell-trafficid",
+      "description": "BrandWell TrafficID skills and MCP tools: identified website visitors, their detail and form completions. Signs in through your browser."
+    },
+    {
+      "name": "brandwell-socialstreams",
+      "source": "./claude-code/brandwell-socialstreams",
+      "description": "BrandWell SocialStreams skills and MCP tools: social posts, hiring signals and creators found for your project. Signs in through your browser."
     }
   ]
 }

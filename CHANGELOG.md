@@ -2,6 +2,11 @@
 
 The BrandWell plugins for Claude Code and Codex share one version.
 
+## 0.4.0 (2026-10-05)
+
+- One plugin per product: Visibility, RankWell, Link Builder, MarketPulse, Outreach, Direct Mail, TrafficID and SocialStreams, for Claude Code, Codex and Cursor. Install the products you use.
+- The single BrandWell and BrandWell (API key) plugins are no longer offered. On a machine without a browser, add the MCP server with a project API key (see the README).
+
 ## 0.3.12 (2026-10-03)
 
 - Skills updated to match BrandWell (abd696a98f8f).

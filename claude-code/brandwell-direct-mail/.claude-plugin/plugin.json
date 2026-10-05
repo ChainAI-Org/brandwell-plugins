@@ -1,0 +1,20 @@
+{
+  "name": "brandwell-direct-mail",
+  "displayName": "BrandWell Direct Mail",
+  "version": "0.4.0",
+  "description": "BrandWell Direct Mail skills and MCP tools: draft, schedule and run postcard campaigns. Signs in through your browser.",
+  "author": {
+    "name": "BrandWell",
+    "url": "https://brandwell.ai"
+  },
+  "homepage": "https://brandwell.ai",
+  "license": "MIT",
+  "keywords": [
+    "brandwell",
+    "seo",
+    "ai-visibility",
+    "marketing",
+    "outreach",
+    "mcp"
+  ]
+}

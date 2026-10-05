@@ -1,0 +1,20 @@
+{
+  "name": "brandwell-socialstreams",
+  "displayName": "BrandWell SocialStreams",
+  "version": "0.4.0",
+  "description": "BrandWell SocialStreams skills and MCP tools: social posts, hiring signals and creators found for your project. Signs in through your browser.",
+  "author": {
+    "name": "BrandWell",
+    "url": "https://brandwell.ai"
+  },
+  "homepage": "https://brandwell.ai",
+  "license": "MIT",
+  "keywords": [
+    "brandwell",
+    "seo",
+    "ai-visibility",
+    "marketing",
+    "outreach",
+    "mcp"
+  ]
+}

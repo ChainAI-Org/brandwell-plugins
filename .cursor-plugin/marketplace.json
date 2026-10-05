@@ -4,14 +4,49 @@
     "name": "BrandWell"
   },
   "metadata": {
-    "description": "BrandWell for Cursor: BrandWell skills and MCP server.",
-    "version": "0.3.12"
+    "description": "BrandWell for Cursor: BrandWell skills and MCP server, one plugin per product.",
+    "version": "0.4.0"
   },
   "plugins": [
     {
-      "name": "brandwell",
-      "source": "cursor/brandwell",
-      "description": "BrandWell skills and MCP tools for your BrandWell projects: AI and search visibility, keyword research, content, links, outreach, direct mail, MarketPulse and TrafficID. Signs in through your browser, no API key needed."
+      "name": "brandwell-visibility",
+      "source": "cursor/brandwell-visibility",
+      "description": "BrandWell Visibility skills and MCP tools: AI and search visibility, keyword research, site audits, competitors, AI citations and local search. Signs in through your browser."
+    },
+    {
+      "name": "brandwell-rankwell",
+      "source": "cursor/brandwell-rankwell",
+      "description": "BrandWell RankWell skills and MCP tools: plan what to write next, then create, refine and publish briefs and articles. Signs in through your browser."
+    },
+    {
+      "name": "brandwell-link-builder",
+      "source": "cursor/brandwell-link-builder",
+      "description": "BrandWell Link Builder skills and MCP tools: set up and review link campaigns and find link and citation prospects. Signs in through your browser."
+    },
+    {
+      "name": "brandwell-marketpulse",
+      "source": "cursor/brandwell-marketpulse",
+      "description": "BrandWell MarketPulse skills and MCP tools: find the people researching what you sell, manage your ICP, topics and pulls, and share Demand Scans. Signs in through your browser."
+    },
+    {
+      "name": "brandwell-outreach",
+      "source": "cursor/brandwell-outreach",
+      "description": "BrandWell Outreach skills and MCP tools: email campaigns, feeds and contacts, and cold emails that get replies. Signs in through your browser."
+    },
+    {
+      "name": "brandwell-direct-mail",
+      "source": "cursor/brandwell-direct-mail",
+      "description": "BrandWell Direct Mail skills and MCP tools: draft, schedule and run postcard campaigns. Signs in through your browser."
+    },
+    {
+      "name": "brandwell-trafficid",
+      "source": "cursor/brandwell-trafficid",
+      "description": "BrandWell TrafficID skills and MCP tools: identified website visitors, their detail and form completions. Signs in through your browser."
+    },
+    {
+      "name": "brandwell-socialstreams",
+      "source": "cursor/brandwell-socialstreams",
+      "description": "BrandWell SocialStreams skills and MCP tools: social posts, hiring signals and creators found for your project. Signs in through your browser."
     }
   ]
 }

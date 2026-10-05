@@ -1,0 +1,23 @@
+{
+  "name": "brandwell-marketpulse",
+  "displayName": "BrandWell MarketPulse",
+  "version": "0.4.0",
+  "description": "BrandWell MarketPulse skills and MCP tools: find the people researching what you sell, manage your ICP, topics and pulls, and share Demand Scans. Signs in through your browser.",
+  "author": {
+    "name": "BrandWell"
+  },
+  "homepage": "https://brandwell.ai",
+  "repository": "https://github.com/ChainAI-Org/brandwell-plugins",
+  "license": "MIT",
+  "keywords": [
+    "brandwell",
+    "seo",
+    "ai-visibility",
+    "marketing",
+    "outreach",
+    "mcp"
+  ],
+  "category": "integrations",
+  "skills": "./skills/",
+  "mcpServers": "./mcp.json"
+}

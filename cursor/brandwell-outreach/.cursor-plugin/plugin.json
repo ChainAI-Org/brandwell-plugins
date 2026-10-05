@@ -1,0 +1,23 @@
+{
+  "name": "brandwell-outreach",
+  "displayName": "BrandWell Outreach",
+  "version": "0.4.0",
+  "description": "BrandWell Outreach skills and MCP tools: email campaigns, feeds and contacts, and cold emails that get replies. Signs in through your browser.",
+  "author": {
+    "name": "BrandWell"
+  },
+  "homepage": "https://brandwell.ai",
+  "repository": "https://github.com/ChainAI-Org/brandwell-plugins",
+  "license": "MIT",
+  "keywords": [
+    "brandwell",
+    "seo",
+    "ai-visibility",
+    "marketing",
+    "outreach",
+    "mcp"
+  ],
+  "category": "integrations",
+  "skills": "./skills/",
+  "mcpServers": "./mcp.json"
+}

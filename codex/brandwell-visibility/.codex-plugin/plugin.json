@@ -1,0 +1,37 @@
+{
+  "name": "brandwell-visibility",
+  "version": "0.4.0",
+  "description": "BrandWell Visibility skills and MCP tools: AI and search visibility, keyword research, site audits, competitors, AI citations and local search. Signs in through your browser.",
+  "author": {
+    "name": "BrandWell",
+    "url": "https://brandwell.ai"
+  },
+  "homepage": "https://brandwell.ai",
+  "license": "MIT",
+  "keywords": [
+    "brandwell",
+    "seo",
+    "ai-visibility",
+    "marketing",
+    "outreach",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "BrandWell Visibility",
+    "shortDescription": "AI and search visibility in BrandWell",
+    "longDescription": "BrandWell Visibility skills and MCP tools: AI and search visibility, keyword research, site audits, competitors, AI citations and local search. Signs in through your browser.",
+    "developerName": "BrandWell",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://brandwell.ai",
+    "defaultPrompt": [
+      "Review my AI and search visibility and suggest the next three actions"
+    ]
+  }
+}

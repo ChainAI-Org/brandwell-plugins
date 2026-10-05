@@ -1,0 +1,23 @@
+{
+  "name": "brandwell-rankwell",
+  "displayName": "BrandWell RankWell",
+  "version": "0.4.0",
+  "description": "BrandWell RankWell skills and MCP tools: plan what to write next, then create, refine and publish briefs and articles. Signs in through your browser.",
+  "author": {
+    "name": "BrandWell"
+  },
+  "homepage": "https://brandwell.ai",
+  "repository": "https://github.com/ChainAI-Org/brandwell-plugins",
+  "license": "MIT",
+  "keywords": [
+    "brandwell",
+    "seo",
+    "ai-visibility",
+    "marketing",
+    "outreach",
+    "mcp"
+  ],
+  "category": "integrations",
+  "skills": "./skills/",
+  "mcpServers": "./mcp.json"
+}

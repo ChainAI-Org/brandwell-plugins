@@ -1,0 +1,37 @@
+{
+  "name": "brandwell-trafficid",
+  "version": "0.4.0",
+  "description": "BrandWell TrafficID skills and MCP tools: identified website visitors, their detail and form completions. Signs in through your browser.",
+  "author": {
+    "name": "BrandWell",
+    "url": "https://brandwell.ai"
+  },
+  "homepage": "https://brandwell.ai",
+  "license": "MIT",
+  "keywords": [
+    "brandwell",
+    "seo",
+    "ai-visibility",
+    "marketing",
+    "outreach",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "BrandWell TrafficID",
+    "shortDescription": "Who visits your site, with TrafficID",
+    "longDescription": "BrandWell TrafficID skills and MCP tools: identified website visitors, their detail and form completions. Signs in through your browser.",
+    "developerName": "BrandWell",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://brandwell.ai",
+    "defaultPrompt": [
+      "Who visited my website this week?"
+    ]
+  }
+}

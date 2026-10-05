@@ -1,0 +1,23 @@
+{
+  "name": "brandwell-link-builder",
+  "displayName": "BrandWell Link Builder",
+  "version": "0.4.0",
+  "description": "BrandWell Link Builder skills and MCP tools: set up and review link campaigns and find link and citation prospects. Signs in through your browser.",
+  "author": {
+    "name": "BrandWell"
+  },
+  "homepage": "https://brandwell.ai",
+  "repository": "https://github.com/ChainAI-Org/brandwell-plugins",
+  "license": "MIT",
+  "keywords": [
+    "brandwell",
+    "seo",
+    "ai-visibility",
+    "marketing",
+    "outreach",
+    "mcp"
+  ],
+  "category": "integrations",
+  "skills": "./skills/",
+  "mcpServers": "./mcp.json"
+}

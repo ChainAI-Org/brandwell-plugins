@@ -1,40 +1,44 @@
 # BrandWell plugins for Claude Code, Codex and Cursor
 
-BrandWell's skills and MCP server as plugins for Claude Code, Codex and Cursor. They let your AI work in your BrandWell projects: AI and search visibility, keyword research, content, links, outreach, direct mail, MarketPulse and TrafficID. You need a BrandWell account.
+BrandWell's skills and MCP server as plugins for Claude Code, Codex and Cursor, one plugin per BrandWell product. They let your AI work in your BrandWell projects. Install the products you use. You need a BrandWell account.
+
+- BrandWell Visibility (`brandwell-visibility`): AI and search visibility in BrandWell
+- BrandWell RankWell (`brandwell-rankwell`): Plan and write content with RankWell
+- BrandWell Link Builder (`brandwell-link-builder`): Link Builder campaigns and prospects
+- BrandWell MarketPulse (`brandwell-marketpulse`): Find who is in market with MarketPulse
+- BrandWell Outreach (`brandwell-outreach`): Email campaigns with BrandWell Outreach
+- BrandWell Direct Mail (`brandwell-direct-mail`): Postcard campaigns with BrandWell
+- BrandWell TrafficID (`brandwell-trafficid`): Who visits your site, with TrafficID
+- BrandWell SocialStreams (`brandwell-socialstreams`): Social opportunities with SocialStreams
 
 ## Install
 
-Claude Code (version 2.1.275 or later), in a session:
+Claude Code (version 2.1.275 or later), in a session, one command per plugin:
 
 ```
-/plugin install brandwell --marketplace ChainAI-Org/brandwell-plugins
+/plugin install brandwell-visibility --marketplace ChainAI-Org/brandwell-plugins
 ```
 
-Or from a shell: `claude plugin marketplace add ChainAI-Org/brandwell-plugins`, then `claude plugin install brandwell@brandwell`.
+Or from a shell: `claude plugin marketplace add ChainAI-Org/brandwell-plugins`, then `claude plugin install brandwell-visibility@brandwell`.
 
 Codex:
 
 ```
-codex plugin marketplace add ChainAI-Org/brandwell-plugins && codex plugin add brandwell@brandwell
+codex plugin marketplace add ChainAI-Org/brandwell-plugins && codex plugin add brandwell-visibility@brandwell
 ```
 
-Cursor: open Customize, find BrandWell in the marketplace and click Install. Until it is listed there, copy `cursor/brandwell/` to `~/.cursor/plugins/local/brandwell` and reload Cursor.
+Cursor: open Customize, find the BrandWell plugins in the marketplace and click Install. Until they are listed there, copy a plugin's folder, such as `cursor/brandwell-visibility/`, to `~/.cursor/plugins/local/brandwell-visibility` and reload Cursor.
 
 ## Sign in
 
-There is no API key to copy. The first time BrandWell connects, your browser opens BrandWell: sign in, tick the projects the AI may use and click Allow.
+There is no API key to copy. The first time a plugin connects, your browser opens BrandWell: sign in, tick the projects the AI may use and click Allow. The tools you can use follow your BrandWell plan, whichever plugins you install.
 
-- Claude Code: if the browser does not open, type `/mcp`, choose brandwell and sign in.
+- Claude Code: if the browser does not open, type `/mcp`, choose the plugin's brandwell server and sign in.
 - Codex: run `codex mcp login brandwell`.
 
-## Machines without a browser: BrandWell (API key)
+## Machines without a browser
 
-Install **BrandWell (API key)** (`brandwell-api-key`) instead of BrandWell, not as well. It has the same skills and tools and uses a project API key, which you create in the BrandWell portal under Visibility > MCP > Advanced.
-
-- Claude Code: `/plugin install brandwell-api-key --marketplace ChainAI-Org/brandwell-plugins`. Claude Code asks for the key when you enable the plugin and keeps it in your system's secure storage.
-- Codex: set the `BRANDWELL_MCP_TOKEN` environment variable to the key, then `codex plugin add brandwell-api-key@brandwell`. Codex has no field for the key, so it reads that variable.
-
-Without a plugin, for CI jobs and scripts, keep the key in `BRANDWELL_MCP_TOKEN` and add the server directly (the single quotes keep the variable a reference, so the key is read when the client connects):
+The plugins sign in through the browser. For CI jobs, scripts and machines without a browser, use a project API key instead, which you create in the BrandWell portal under Visibility > MCP > Advanced. Keep it in `BRANDWELL_MCP_TOKEN` and add the server directly (the single quotes keep the variable a reference, so the key is read when the client connects):
 
 ```
 claude mcp add --transport http brandwell https://portal.brandwell.ai/mcp --header 'Authorization: Bearer ${BRANDWELL_MCP_TOKEN}'
@@ -43,11 +47,30 @@ codex mcp add brandwell --url https://portal.brandwell.ai/mcp --bearer-token-env
 
 ## What is in this repository
 
-- `claude-code/brandwell/`: BrandWell for Claude Code
-- `codex/brandwell/`: BrandWell for Codex
-- `claude-code/brandwell-api-key/`: BrandWell (API key) for Claude Code
-- `codex/brandwell-api-key/`: BrandWell (API key) for Codex
-- `cursor/brandwell/`: BrandWell for Cursor
+- `claude-code/brandwell-visibility/`: BrandWell Visibility for Claude Code
+- `codex/brandwell-visibility/`: BrandWell Visibility for Codex
+- `cursor/brandwell-visibility/`: BrandWell Visibility for Cursor
+- `claude-code/brandwell-rankwell/`: BrandWell RankWell for Claude Code
+- `codex/brandwell-rankwell/`: BrandWell RankWell for Codex
+- `cursor/brandwell-rankwell/`: BrandWell RankWell for Cursor
+- `claude-code/brandwell-link-builder/`: BrandWell Link Builder for Claude Code
+- `codex/brandwell-link-builder/`: BrandWell Link Builder for Codex
+- `cursor/brandwell-link-builder/`: BrandWell Link Builder for Cursor
+- `claude-code/brandwell-marketpulse/`: BrandWell MarketPulse for Claude Code
+- `codex/brandwell-marketpulse/`: BrandWell MarketPulse for Codex
+- `cursor/brandwell-marketpulse/`: BrandWell MarketPulse for Cursor
+- `claude-code/brandwell-outreach/`: BrandWell Outreach for Claude Code
+- `codex/brandwell-outreach/`: BrandWell Outreach for Codex
+- `cursor/brandwell-outreach/`: BrandWell Outreach for Cursor
+- `claude-code/brandwell-direct-mail/`: BrandWell Direct Mail for Claude Code
+- `codex/brandwell-direct-mail/`: BrandWell Direct Mail for Codex
+- `cursor/brandwell-direct-mail/`: BrandWell Direct Mail for Cursor
+- `claude-code/brandwell-trafficid/`: BrandWell TrafficID for Claude Code
+- `codex/brandwell-trafficid/`: BrandWell TrafficID for Codex
+- `cursor/brandwell-trafficid/`: BrandWell TrafficID for Cursor
+- `claude-code/brandwell-socialstreams/`: BrandWell SocialStreams for Claude Code
+- `codex/brandwell-socialstreams/`: BrandWell SocialStreams for Codex
+- `cursor/brandwell-socialstreams/`: BrandWell SocialStreams for Cursor
 - `.claude-plugin/marketplace.json`, `.agents/plugins/marketplace.json` and `.cursor-plugin/marketplace.json`: the marketplace files for each client
 - `server.json`: BrandWell's MCP server for the MCP Registry
 

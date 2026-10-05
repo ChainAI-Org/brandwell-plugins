@@ -1,0 +1,37 @@
+{
+  "name": "brandwell-rankwell",
+  "version": "0.4.0",
+  "description": "BrandWell RankWell skills and MCP tools: plan what to write next, then create, refine and publish briefs and articles. Signs in through your browser.",
+  "author": {
+    "name": "BrandWell",
+    "url": "https://brandwell.ai"
+  },
+  "homepage": "https://brandwell.ai",
+  "license": "MIT",
+  "keywords": [
+    "brandwell",
+    "seo",
+    "ai-visibility",
+    "marketing",
+    "outreach",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "BrandWell RankWell",
+    "shortDescription": "Plan and write content with RankWell",
+    "longDescription": "BrandWell RankWell skills and MCP tools: plan what to write next, then create, refine and publish briefs and articles. Signs in through your browser.",
+    "developerName": "BrandWell",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://brandwell.ai",
+    "defaultPrompt": [
+      "What should I write next in RankWell?"
+    ]
+  }
+}

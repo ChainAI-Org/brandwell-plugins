@@ -2,6 +2,10 @@
 
 The BrandWell plugins for Claude Code and Codex share one version.
 
+## 0.5.0 (2026-10-06)
+
+- BrandWell Automations is its own plugin, brandwell-automations. The other product plugins no longer include the Automations skill, so install it next to them to create and run automations.
+
 ## 0.4.0 (2026-10-05)
 
 - One plugin per product: Visibility, RankWell, Link Builder, MarketPulse, Outreach, Direct Mail, TrafficID and SocialStreams, for Claude Code, Codex and Cursor. Install the products you use.

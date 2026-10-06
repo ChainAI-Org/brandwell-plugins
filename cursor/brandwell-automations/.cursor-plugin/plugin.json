@@ -1,8 +1,8 @@
 {
-  "name": "brandwell-visibility",
-  "displayName": "BrandWell Visibility",
+  "name": "brandwell-automations",
+  "displayName": "BrandWell Automations",
   "version": "0.5.0",
-  "description": "BrandWell Visibility skills and MCP tools: AI and search visibility, keyword research, site audits, competitors, AI citations and local search. Signs in through your browser.",
+  "description": "BrandWell Automations skills and MCP tools: turn a sentence into an automation, then test, run, pause or resume it. What an automation can do follows the other products in your plan. Signs in through your browser.",
   "author": {
     "name": "BrandWell"
   },

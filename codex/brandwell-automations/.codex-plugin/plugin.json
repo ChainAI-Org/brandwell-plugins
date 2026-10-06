@@ -1,0 +1,37 @@
+{
+  "name": "brandwell-automations",
+  "version": "0.5.0",
+  "description": "BrandWell Automations skills and MCP tools: turn a sentence into an automation, then test, run, pause or resume it. What an automation can do follows the other products in your plan. Signs in through your browser.",
+  "author": {
+    "name": "BrandWell",
+    "url": "https://brandwell.ai"
+  },
+  "homepage": "https://brandwell.ai",
+  "license": "MIT",
+  "keywords": [
+    "brandwell",
+    "seo",
+    "ai-visibility",
+    "marketing",
+    "outreach",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "BrandWell Automations",
+    "shortDescription": "Automate work across BrandWell",
+    "longDescription": "BrandWell Automations skills and MCP tools: turn a sentence into an automation, then test, run, pause or resume it. What an automation can do follows the other products in your plan. Signs in through your browser.",
+    "developerName": "BrandWell",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://brandwell.ai",
+    "defaultPrompt": [
+      "What automations do I have?"
+    ]
+  }
+}

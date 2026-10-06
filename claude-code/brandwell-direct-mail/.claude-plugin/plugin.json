@@ -1,7 +1,7 @@
 {
   "name": "brandwell-direct-mail",
   "displayName": "BrandWell Direct Mail",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "BrandWell Direct Mail skills and MCP tools: draft, schedule and run postcard campaigns. Signs in through your browser.",
   "author": {
     "name": "BrandWell",

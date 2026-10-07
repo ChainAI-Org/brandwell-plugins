@@ -2,6 +2,10 @@
 
 The BrandWell plugins for Claude Code and Codex share one version.
 
+## 0.5.1 (2026-10-07)
+
+- Skills updated to match BrandWell (78e3f6b371d9).
+
 ## 0.5.0 (2026-10-06)
 
 - BrandWell Automations is its own plugin, brandwell-automations. The other product plugins no longer include the Automations skill, so install it next to them to create and run automations.

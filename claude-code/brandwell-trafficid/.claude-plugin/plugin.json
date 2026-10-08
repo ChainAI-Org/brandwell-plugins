@@ -1,7 +1,7 @@
 {
   "name": "brandwell-trafficid",
   "displayName": "BrandWell TrafficID",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "BrandWell TrafficID skills and MCP tools: identified website visitors, their detail and form completions. Signs in through your browser.",
   "author": {
     "name": "BrandWell",

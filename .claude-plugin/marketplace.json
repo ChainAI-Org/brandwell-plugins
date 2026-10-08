@@ -5,7 +5,7 @@
     "url": "https://brandwell.ai"
   },
   "description": "BrandWell for Claude Code: BrandWell skills and MCP server, one plugin per product. Install the products you use.",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "plugins": [
     {
       "name": "brandwell-visibility",

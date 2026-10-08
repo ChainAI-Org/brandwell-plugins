@@ -2,6 +2,10 @@
 
 The BrandWell plugins for Claude Code and Codex share one version.
 
+## 0.6.2 (2026-10-08)
+
+- Skills updated to match BrandWell (31b4faf48fa8).
+
 ## 0.6.1 (2026-10-08)
 
 - Skills updated to match BrandWell (89cdfd2d9e28).

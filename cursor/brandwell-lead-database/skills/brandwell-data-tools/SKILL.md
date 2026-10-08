@@ -1,6 +1,6 @@
 ---
 name: brandwell-data-tools
-description: "Run BrandWell data jobs on people or companies the person already has: find emails and mobile numbers, verify an email, enrich a person or company, scrape reviews or a web page (such as a company's reviews on G2), compare data sources, see the per-hit price before running, and check an asynchronous result. Use for 'find mobile numbers for these people', 'scrape the reviews of this company', 'enrich this list'. To find new people who match a profile use brandwell-lead-database."
+description: "Search and run BrandWell's data jobs: find companies, people, job posts, news, funding, social posts, reviews and web pages from BrandWell's data sources, and enrich, verify or fill in records the person already has, with the per-hit price before running and asynchronous results. Use for 'find companies that use a technology', 'find mobile numbers for these people', 'scrape the reviews of this company', 'enrich this list'. To match people by profile fields (title, seniority, company size) use brandwell-lead-database; to do it on a schedule use brandwell-growth-workflows."
 allowed-tools: data_tools_search data_tools_describe data_tools_request data_tools_estimate data_capability_run data_tools_run data_call_get enrich_person enrich_company
 metadata:
   title: "BrandWell data tools"

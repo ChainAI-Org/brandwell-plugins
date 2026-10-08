@@ -5,7 +5,7 @@
   },
   "metadata": {
     "description": "BrandWell for Cursor: BrandWell skills and MCP server, one plugin per product.",
-    "version": "0.6.1"
+    "version": "0.6.2"
   },
   "plugins": [
     {

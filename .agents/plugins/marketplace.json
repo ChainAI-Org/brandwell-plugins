@@ -101,6 +101,30 @@
       "category": "Productivity"
     },
     {
+      "name": "brandwell-lead-database",
+      "source": {
+        "source": "local",
+        "path": "./codex/brandwell-lead-database"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "brandwell-account",
+      "source": {
+        "source": "local",
+        "path": "./codex/brandwell-account"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
       "name": "brandwell-automations",
       "source": {
         "source": "local",

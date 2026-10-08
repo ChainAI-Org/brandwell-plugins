@@ -1,0 +1,20 @@
+{
+  "name": "brandwell-lead-database",
+  "displayName": "BrandWell Lead Database",
+  "version": "0.6.0",
+  "description": "BrandWell Lead Database skills and MCP tools: search people and companies, build audiences, enrich records with data tools and waterfalls, all paid from your Workflow Wallet. Signs in through your browser.",
+  "author": {
+    "name": "BrandWell",
+    "url": "https://brandwell.ai"
+  },
+  "homepage": "https://brandwell.ai",
+  "license": "MIT",
+  "keywords": [
+    "brandwell",
+    "seo",
+    "ai-visibility",
+    "marketing",
+    "outreach",
+    "mcp"
+  ]
+}

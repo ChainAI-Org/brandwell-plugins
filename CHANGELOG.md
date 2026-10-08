@@ -2,6 +2,10 @@
 
 The BrandWell plugins for Claude Code and Codex share one version.
 
+## 0.6.0 (2026-10-06)
+
+- Two new plugins: brandwell-lead-database (people and company records, audiences, data tools and waterfalls) and brandwell-account (usage, plans, Workflow Wallet, connected agents and sync).
+
 ## 0.5.1 (2026-10-07)
 
 - Skills updated to match BrandWell (78e3f6b371d9).

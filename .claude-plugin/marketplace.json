@@ -5,7 +5,7 @@
     "url": "https://brandwell.ai"
   },
   "description": "BrandWell for Claude Code: BrandWell skills and MCP server, one plugin per product. Install the products you use.",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "plugins": [
     {
       "name": "brandwell-visibility",
@@ -46,6 +46,16 @@
       "name": "brandwell-socialstreams",
       "source": "./claude-code/brandwell-socialstreams",
       "description": "BrandWell SocialStreams skills and MCP tools: social posts, hiring signals and creators found for your project. Signs in through your browser."
+    },
+    {
+      "name": "brandwell-lead-database",
+      "source": "./claude-code/brandwell-lead-database",
+      "description": "BrandWell Lead Database skills and MCP tools: search people and companies, build audiences, enrich records with data tools and waterfalls, all paid from your Workflow Wallet. Signs in through your browser."
+    },
+    {
+      "name": "brandwell-account",
+      "source": "./claude-code/brandwell-account",
+      "description": "BrandWell usage and plans skills and MCP tools: account usage, Workflow Wallet charges, platform plans, connected agents and sync. Signs in through your browser."
     },
     {
       "name": "brandwell-automations",

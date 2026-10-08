@@ -10,6 +10,8 @@ BrandWell's skills and MCP server as plugins for Claude Code, Codex and Cursor, 
 - BrandWell Direct Mail (`brandwell-direct-mail`): Postcard campaigns with BrandWell
 - BrandWell TrafficID (`brandwell-trafficid`): Who visits your site, with TrafficID
 - BrandWell SocialStreams (`brandwell-socialstreams`): Social opportunities with SocialStreams
+- BrandWell Lead Database (`brandwell-lead-database`): Find, enrich and organize leads in BrandWell
+- BrandWell Usage and plans (`brandwell-account`): Usage, plans, wallet and connected agents
 - BrandWell Automations (`brandwell-automations`): Automate work across BrandWell
 
 ## Install
@@ -72,6 +74,12 @@ codex mcp add brandwell --url https://portal.brandwell.ai/mcp --bearer-token-env
 - `claude-code/brandwell-socialstreams/`: BrandWell SocialStreams for Claude Code
 - `codex/brandwell-socialstreams/`: BrandWell SocialStreams for Codex
 - `cursor/brandwell-socialstreams/`: BrandWell SocialStreams for Cursor
+- `claude-code/brandwell-lead-database/`: BrandWell Lead Database for Claude Code
+- `codex/brandwell-lead-database/`: BrandWell Lead Database for Codex
+- `cursor/brandwell-lead-database/`: BrandWell Lead Database for Cursor
+- `claude-code/brandwell-account/`: BrandWell Usage and plans for Claude Code
+- `codex/brandwell-account/`: BrandWell Usage and plans for Codex
+- `cursor/brandwell-account/`: BrandWell Usage and plans for Cursor
 - `claude-code/brandwell-automations/`: BrandWell Automations for Claude Code
 - `codex/brandwell-automations/`: BrandWell Automations for Codex
 - `cursor/brandwell-automations/`: BrandWell Automations for Cursor

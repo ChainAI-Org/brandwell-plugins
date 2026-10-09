@@ -1,7 +1,7 @@
 {
   "name": "brandwell-account",
   "displayName": "BrandWell Usage and plans",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "description": "BrandWell usage and plans skills and MCP tools: account usage, Workflow Wallet charges, platform plans, connected agents and sync. Signs in through your browser.",
   "author": {
     "name": "BrandWell"

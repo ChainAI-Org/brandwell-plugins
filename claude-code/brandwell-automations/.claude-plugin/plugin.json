@@ -1,7 +1,7 @@
 {
   "name": "brandwell-automations",
   "displayName": "BrandWell Automations",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "description": "BrandWell Automations skills and MCP tools: turn a sentence into an automation, then test, run, pause or resume it. What an automation can do follows the other products in your plan. Signs in through your browser.",
   "author": {
     "name": "BrandWell",

@@ -5,7 +5,7 @@
     "url": "https://brandwell.ai"
   },
   "description": "BrandWell for Claude Code: BrandWell skills and MCP server, one plugin per product. Install the products you use.",
-  "version": "0.6.3",
+  "version": "0.6.4",
   "plugins": [
     {
       "name": "brandwell-visibility",
@@ -25,7 +25,7 @@
     {
       "name": "brandwell-marketpulse",
       "source": "./claude-code/brandwell-marketpulse",
-      "description": "BrandWell MarketPulse skills and MCP tools: find the people researching what you sell, manage your ICP, topics and pulls, and share Demand Scans. Signs in through your browser."
+      "description": "BrandWell MarketPulse skills and MCP tools: find the people researching what you sell, manage your ICP, topics and Intent Scans, and share Intent Scans. Signs in through your browser."
     },
     {
       "name": "brandwell-outreach",

@@ -1,8 +1,8 @@
 {
   "name": "brandwell-marketpulse",
   "displayName": "BrandWell MarketPulse",
-  "version": "0.6.3",
-  "description": "BrandWell MarketPulse skills and MCP tools: find the people researching what you sell, manage your ICP, topics and pulls, and share Demand Scans. Signs in through your browser.",
+  "version": "0.6.4",
+  "description": "BrandWell MarketPulse skills and MCP tools: find the people researching what you sell, manage your ICP, topics and Intent Scans, and share Intent Scans. Signs in through your browser.",
   "author": {
     "name": "BrandWell",
     "url": "https://brandwell.ai"

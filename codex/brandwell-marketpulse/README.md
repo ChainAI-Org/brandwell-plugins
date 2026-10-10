@@ -1,6 +1,6 @@
 # BrandWell MarketPulse for Codex
 
-BrandWell MarketPulse skills and MCP tools: find the people researching what you sell, manage your ICP, topics and pulls, and share Demand Scans. For Codex; BrandWell has one plugin like this per product.
+BrandWell MarketPulse skills and MCP tools: find the people researching what you sell, manage your ICP, topics and Intent Scans, and share Intent Scans. For Codex; BrandWell has one plugin like this per product.
 
 Sign-in happens in your browser. The first time BrandWell connects, sign in to BrandWell, tick the projects the AI may use and click Allow. No API key is needed. The tools you can use follow your BrandWell plan.
 

@@ -1,7 +1,7 @@
 ---
 name: brandwell-outreach
 description: "Work with BrandWell Outreach: read email campaigns and what one campaign sends, continuous feeds and intake lists, add contacts to a tagged intake list, write or rewrite an email campaign as a saved draft, change a saved campaign's settings and emails, send a test, start, pause or resume a campaign, enroll chosen people, and create or switch feeds. Use when the person asks about their email campaigns, where contacts flow in, wants people added, or wants an email campaign created, rewritten, changed, tested, started or paused."
-allowed-tools: outreach_campaigns outreach_campaign outreach_feeds outreach_intake_sources outreach_add_contacts outreach_workspace outreach_fields outreach_create_campaign_draft outreach_import_status outreach_import_contacts outreach_update_campaign outreach_update_steps outreach_send_test_email outreach_set_campaign_state outreach_enroll_preview outreach_enroll_confirm outreach_create_feed outreach_set_feed_state
+allowed-tools: outreach_campaigns outreach_campaign outreach_feeds outreach_intake_sources outreach_add_contacts outreach_workspace outreach_fields outreach_create_campaign_draft outreach_import_status outreach_import_contacts outreach_update_campaign outreach_update_steps outreach_send_test_email outreach_set_campaign_state outreach_enroll_preview outreach_enroll_confirm outreach_create_feed outreach_set_feed_state onboarding_status onboarding_start_task campaign_offer_get campaign_offer_save
 metadata:
   writes: true
   title: "BrandWell Outreach"
@@ -61,3 +61,6 @@ Rules:
 - Add only contacts the person supplied or approved, with their email.
 - Adding contacts never sends email by itself; say whether a feed will pick up the tag.
 - If Outreach is not connected for this project, the tools say so. Report it and stop.
+
+Onboarding and the next workflow:
+Before drafting a new campaign, use campaign_offer_get when available. If the offer is missing, load brandwell-onboarding and ask the four marketing questions one at a time. Save the confirmed answers for this campaign before writing. After a real campaign is saved, read onboarding_status and guide its next useful workflow. A saved draft does not prove delivery or a positive reply.

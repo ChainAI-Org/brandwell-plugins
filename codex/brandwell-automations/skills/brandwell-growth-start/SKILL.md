@@ -1,7 +1,7 @@
 ---
 name: brandwell-growth-start
 description: "Test, start and watch a growth workflow once its draft is ready: test it on five real records, set its spending limit, start it with the person's approval of the quote, and read what is running and what needs attention. Use for 'start it', 'test it first', 'what is running', 'what needs my attention', 'only spend $20 a day on this'."
-allowed-tools: workflows_estimate workflows_test workflows_start workflows_flow workflows_step_people workflows_run_now workflows_home workflows_preview wallet_set_limits wallet_check_spend integrations_connect_link
+allowed-tools: workflows_estimate workflows_test workflows_start workflows_flow workflows_step_people workflows_run_now workflows_home workflows_preview wallet_set_limits wallet_check_spend integrations_connect_link onboarding_status onboarding_start_task
 metadata:
   title: "Test, start and watch a growth workflow"
   service: automations
@@ -28,3 +28,6 @@ Working with the person:
 - Go one step at a time and ask one question at a time. In the BrandWell Assistant, ask with ask_person; never put a question at the end of a reply.
 - Never start work whose price you have not shown. A paid workflow needs a finite limit: ask which amount, "only spend $20 a day" is a day limit of 20, with hold, included_only or pause at the limit.
 - When the Workflow Wallet is short for the quote, load brandwell-wallet and give the add-funds link. When a step needs a connection, call integrations_connect_link and give the link. Never say funds were added or a connection was made.
+
+Onboarding and the next workflow:
+When onboarding_status is available, start from the ranked next step and explain how this workflow moves a prospect toward a positive reply. The first preview must not send or charge. A test can help the person understand the steps but never completes the real-workflow setup task. Read status after a successful real run and offer the next useful workflow.

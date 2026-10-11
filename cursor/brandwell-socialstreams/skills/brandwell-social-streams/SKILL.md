@@ -1,7 +1,7 @@
 ---
 name: brandwell-social-streams
 description: "Read SocialStreams opportunities: social posts, hiring signals and creators found for this Company Project; list, run, pause and resume its streams; and, for the assigned AIMEE employee, claim and review opportunities. Use when the person asks about social posts their streams collected, creators to work with, or their social streams. It reads what the project's streams collected; it does not search for new companies or people."
-allowed-tools: get_social_opportunities socialstreams_list_streams socialstreams_run_stream socialstreams_pause_stream socialstreams_resume_stream socialstreams_update_opportunity socialstreams_queue_outreach account_plan_status
+allowed-tools: get_social_opportunities socialstreams_list_streams socialstreams_run_stream socialstreams_pause_stream socialstreams_resume_stream socialstreams_update_opportunity socialstreams_queue_outreach account_plan_status onboarding_status onboarding_start_task
 metadata:
   writes: true
   title: "BrandWell Social Streams"
@@ -28,3 +28,6 @@ Rules:
 - A job is a company-level signal; its poster is not automatically a buyer. Keep useful results even when no email is available.
 - Reading opportunities never runs a paid search or sends outreach. Running or resuming a stream does spend, and only after the person confirms.
 - Plan status: call account_plan_status when the person asks when their plan renews or ends, or whether it is cancelled. Answer from its state, ends_at and renews_at exactly as returned, and if can_keep is true say they can reverse the cancellation with Keep My Subscription in Billing. Never guess a date.
+
+Onboarding and the next workflow:
+When onboarding_status is available, start from the prepared buyer streams and guide a real collection. A draft stream is not a completed setup step. After relevant posts arrive, suggest a useful reply workflow. Only confirmed positive replies count as wins; found posts do not.

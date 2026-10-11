@@ -1,7 +1,7 @@
 ---
 name: brandwell-visibility-project-setup
 description: "Establish the domain, market, goals, positioning, competitors, and measurement status for a Company Project."
-allowed-tools: whoami get_search_console_performance get_analytics_summary explore_ai_prompt visibility_save_keyword visibility_set_rank_keyword visibility_run_site_audit
+allowed-tools: whoami get_search_console_performance get_analytics_summary explore_ai_prompt visibility_save_keyword visibility_set_rank_keyword visibility_run_site_audit onboarding_status onboarding_start_task
 metadata:
   title: "BrandWell Visibility Project Setup"
   service: visibility
@@ -34,3 +34,6 @@ Data and safety rules:
 - Web research may supplement project data when the user asks for current public evidence. Cite the public source and date. Do not present public estimates as first-party BrandWell measurements.
 - Analysis, plans, briefs, and drafts are allowed. Publishing, outreach, purchases, account changes, and other external effects require explicit approval.
 - Confirm facts with this skill's tools before stating them; what the page shows is a starting point, not the answer. When no tool can confirm something, say so and offer BrandWell support. Never say BrandWell cannot do something unless a tool says so.
+
+Onboarding and the next workflow:
+When onboarding_status is available, reuse verified company context and cite where it came from. Let the person correct positioning and competitors. Once the connection or project settings are genuinely saved, suggest the next useful research or content workflow. Never claim Google is connected from an opened OAuth link.

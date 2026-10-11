@@ -1,7 +1,7 @@
 ---
 name: brandwell-connect-and-sync
 description: "Inspect connected agents and native CRM status, configure existing signed event subscriptions, push records into BrandWell and inspect or replay deliveries. Use when the person wants to connect a RevOps bot, keep systems in sync or revoke an agent."
-allowed-tools: agents_list_connections agents_revoke_connection agents_restore_connection crm_list_connections crm_list_lists sync_get_schema sync_push_records sync_list_subscriptions sync_set_events sync_list_deliveries sync_replay_deliveries automations_draft automations_registry
+allowed-tools: agents_list_connections agents_revoke_connection agents_restore_connection crm_list_connections crm_list_lists sync_get_schema sync_push_records sync_list_subscriptions sync_set_events sync_list_deliveries sync_replay_deliveries automations_draft automations_registry onboarding_status onboarding_start_task crm_request_integration
 metadata:
   title: "BrandWell Connect and sync"
   page: "#/project-settings/agents"
@@ -24,3 +24,6 @@ Revocation requires the server quote and human confirmation. You cannot revoke y
 Delivery reads show safe receiver status and retry details. Replay only the delivery or seven-day window the person requested, preserving the event IDs while creating new delivery IDs. Do not use repeated replays as an automatic retry loop. Sync keys can see and change only their own subscriptions and cannot change project-wide defaults.
 
 Native CRM writing uses the shared CRM action service when available. A connection read does not authorize a CRM write. All direct agent CRM writes require human confirmation, and exported records count toward export allowances. Until that action is available, report the missing capability rather than substituting an unrelated API call.
+
+Onboarding and the next workflow:
+When onboarding_status is available, connect only a supported verified provider. For a missing CRM use crm_request_integration when available; a request is not a connection. After the connection succeeds, suggest a scoped lead-delivery or follow-up workflow. The existing record-sync confirmation rules still apply.

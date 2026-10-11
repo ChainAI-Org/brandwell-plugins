@@ -1,7 +1,7 @@
 ---
 name: brandwell-cold-email
 description: "Write B2B cold emails and follow-up sequences that get replies. Use when the user wants to write cold outreach emails, prospecting emails, cold email campaigns, sales development emails, or SDR emails. Also use when the user mentions \"cold outreach,\" \"prospecting email,\" \"outbound email,\" \"email to leads,\" \"reach out to prospects,\" \"sales email,\" \"follow-up email sequence,\" \"nobody's replying to my emails,\" or \"how do I write a cold email.\" Covers subject lines, opening lines, body copy, CTAs, personalization, and multi-touch follow-up sequences. For warm/lifecycle email sequences, see emails. For sales collateral beyond emails, see sales-enablement."
-allowed-tools: outreach_campaigns outreach_campaign outreach_update_steps
+allowed-tools: outreach_campaigns outreach_campaign outreach_update_steps campaign_offer_get campaign_offer_save onboarding_status
 license: MIT (see LICENSE)
 metadata:
   writes: true
@@ -185,3 +185,6 @@ Confirm facts with this skill's tools before stating them; what the page shows i
 
 Source: https://github.com/coreyhaines31/marketingskills/tree/f86637eace00fe4df586680bb0cda89990da6138/skills/cold-email
 License: MIT. Adapted for BrandWell campaign rendering and punctuation.
+
+Onboarding and the next workflow:
+When campaign_offer_get is available, read the exact campaign offer before writing. Use its confirmed outcome, time to value, give first and difference. If missing, load brandwell-onboarding to prepare and save it first. Use verified proof only. Keep each campaign separate and bring the draft back for review.

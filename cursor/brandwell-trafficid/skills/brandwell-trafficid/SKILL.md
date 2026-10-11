@@ -1,7 +1,7 @@
 ---
 name: brandwell-trafficid
 description: "Read TrafficID's identified website visitors, one visitor's full detail and the site's form completions, score visitors against a saved ICP, and download the visitor list. Use when the person asks who visited the site, which companies or people are showing interest, who filled in a form, or whether a visitor fits their ICP."
-allowed-tools: trafficid_get_visitors trafficid_get_new_visitor_count trafficid_get_visitor trafficid_qualify_visitor trafficid_list_form_fillouts trafficid_export_visitors marketpulse_list_icps account_plan_status
+allowed-tools: trafficid_get_visitors trafficid_get_new_visitor_count trafficid_get_visitor trafficid_qualify_visitor trafficid_list_form_fillouts trafficid_export_visitors marketpulse_list_icps account_plan_status onboarding_status onboarding_start_task
 metadata:
   title: "BrandWell TrafficID"
   service: trafficid
@@ -27,3 +27,6 @@ Rules:
 - Only the contact fields the tool returns may be shown. Never infer or look up personal details elsewhere.
 - Reading and scoring never send outreach or mail. To follow up on visitors, hand off to the Outreach, Direct Mail or Automations skill.
 - Plan status: call account_plan_status when the person asks when their plan renews or ends, or whether it is cancelled. Answer from its state, ends_at and renews_at exactly as returned, and if can_keep is true say they can reverse the cancellation with Keep My Subscription in Billing. Never guess a date.
+
+Onboarding and the next workflow:
+When onboarding_status is available, check script and visit evidence. Installation verification alone is not a captured visit. After the first real visitor arrives, suggest the next approved follow-up workflow for interested companies. Never invent identified visitors or replies.

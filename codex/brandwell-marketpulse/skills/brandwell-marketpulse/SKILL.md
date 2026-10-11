@@ -1,7 +1,7 @@
 ---
 name: brandwell-marketpulse
 description: "Find the people researching what the client sells with MarketPulse: set it up from who the client sells to, answer questions about their audience (how many have a phone, an email or LinkedIn), change the ICP and apply it to their audience, add a topic or scan one now, schedule Intent Scans, narrow the audience by a saved ICP, download a feed's audience, generate, read and share Intent Scans, and check what the plan has left. Use when the person says who they sell to, asks about their audience or buyers, who is in market, their topics, ICP, Intent Scans or MarketPulse limits, or asks what you can do in MarketPulse."
-allowed-tools: marketpulse_suggest_icp marketpulse_create_icp marketpulse_update_icp marketpulse_buyers marketpulse_start_pull marketpulse_list_icps marketpulse_list_feeds marketpulse_list_audiences marketpulse_guarantee marketpulse_get_usage intent_search intent_get_daily_buyers marketpulse_set_default_icp marketpulse_search_topics marketpulse_create_feed marketpulse_update_feed marketpulse_pause_feed marketpulse_export_audience marketpulse_list_demand_scans marketpulse_get_demand_scan marketpulse_generate_demand_scan marketpulse_demand_scan_link marketpulse_email_demand_scan account_plan_status
+allowed-tools: marketpulse_suggest_icp marketpulse_create_icp marketpulse_update_icp marketpulse_buyers marketpulse_start_pull marketpulse_list_icps marketpulse_list_feeds marketpulse_list_audiences marketpulse_guarantee marketpulse_get_usage intent_search intent_get_daily_buyers marketpulse_set_default_icp marketpulse_search_topics marketpulse_create_feed marketpulse_update_feed marketpulse_pause_feed marketpulse_export_audience marketpulse_list_demand_scans marketpulse_get_demand_scan marketpulse_generate_demand_scan marketpulse_demand_scan_link marketpulse_email_demand_scan account_plan_status onboarding_status onboarding_start_task
 metadata:
   title: "BrandWell MarketPulse"
   service: marketpulse
@@ -59,3 +59,6 @@ Rules:
 - Plan status: call account_plan_status when the person asks when their plan renews or ends, or whether it is cancelled. Answer from its state, ends_at and renews_at exactly as returned, and if can_keep is true say they can reverse the cancellation with Keep My Subscription in Billing. Never guess a date.
 
 Use Intent Scan or Intent Scans in customer-facing replies. Recognize legacy requests such as Demand Scan, topic pull, intent pull and Market Refresh as matching synonyms. Keep every technical tool name and response field unchanged.
+
+Onboarding and the next workflow:
+When onboarding_status is available, read the prepared scan and buyer filter before starting another fetch. Prepared guesses need the person's review. Completing a real scan should lead to a useful activation workflow toward a positive reply. A page visit, generated filter or preview is not setup evidence.

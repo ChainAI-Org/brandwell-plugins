@@ -1,7 +1,7 @@
 ---
 name: brandwell-rankwell-content-studio
 description: "Plan, create, inspect, refine and, once the person confirms, publish evidence-backed RankWell briefs and articles."
-allowed-tools: whoami get_rankwell_strategy create_rankwell_brief generate_rankwell_article get_rankwell_generation_job get_rankwell_article refine_rankwell_article list_rankwell_briefs list_rankwell_articles list_rankwell_generation_jobs generate_rankwell_feature_image rankwell_publish_wordpress rankwell_publish_contentful rankwell_export_google_docs rankwell_share_review_link
+allowed-tools: whoami get_rankwell_strategy create_rankwell_brief generate_rankwell_article get_rankwell_generation_job get_rankwell_article refine_rankwell_article list_rankwell_briefs list_rankwell_articles list_rankwell_generation_jobs generate_rankwell_feature_image rankwell_publish_wordpress rankwell_publish_contentful rankwell_export_google_docs rankwell_share_review_link onboarding_status onboarding_start_task
 metadata:
   title: "BrandWell RankWell Content Studio"
   service: rankwell
@@ -37,3 +37,6 @@ RankWell data and safety rules:
 - Keyword targets and usage ranges come from BrandWell's content analysis. Preserve the returned targets and counts. Do not substitute a generated keyword list.
 - After completion, read the article and report its BrandWell ID, draft status, SEO score, keyword coverage, featured image, evidence gaps, and next review step. Keep saved draft text and image warnings distinct. Never claim completion without the returned result.
 - Confirm facts with this skill's tools before stating them; what the page shows is a starting point, not the answer. When no tool can confirm something, say so and offer BrandWell support. Never say BrandWell cannot do something unless a tool says so.
+
+Onboarding and the next workflow:
+When onboarding_status is available, use the prepared quick wins and verified Search Console data. For a RankWell-only plan prioritize useful search visits. After the person approves or publishes real work, read setup again and suggest the next relevant refresh or article workflow. Do not count an unsaved draft or preview as a publication.

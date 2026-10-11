@@ -1,7 +1,7 @@
 ---
 name: brandwell-pipeline-match
 description: "See which open deals, customers and closed-lost deals have people researching your topics, alert the deal owner, and queue new contacts for the CRM. Use when the person asks which deals are heating up, who at a deal is researching, or to send deal data to Pipeline."
-allowed-tools: pipeline_summary pipeline_list_deals pipeline_get_deal pipeline_alert_owner pipeline_add_to_crm pipeline_deliver_contact pipeline_update_settings pipeline_set_automation pipeline_list_sources pipeline_connect_native pipeline_sync_now pipeline_upsert_deals pipeline_list_updates pipeline_ack_updates crm_list_connections crm_list_pipelines crm_sync_records people_get
+allowed-tools: pipeline_summary pipeline_list_deals pipeline_get_deal pipeline_alert_owner pipeline_add_to_crm pipeline_deliver_contact pipeline_update_settings pipeline_set_automation pipeline_list_sources pipeline_connect_native pipeline_sync_now pipeline_upsert_deals pipeline_list_updates pipeline_ack_updates crm_list_connections crm_list_pipelines crm_sync_records people_get onboarding_status onboarding_start_task
 metadata:
   title: "BrandWell Pipeline"
   service: marketpulse
@@ -25,3 +25,6 @@ The agent way: pipeline_upsert_deals pushes up to 500 flat deals, pipeline_list_
 pipeline_update_settings and pipeline_sync_now change matching and re-read a source; every change needs a stable idempotency key. A failed sync keeps the existing deals. pipeline_set_automation turns the owner alert workflow on only after the person approves. With nothing linked it installs the Pipeline owner alert recipe, which has no paid steps; a linked draft workflow must be started with workflows_start first.
 
 Never invent deals, amounts, owners, people or counts. Report the structured error when a call fails.
+
+Onboarding and the next workflow:
+When onboarding_status is available, use completed setup and verified CRM connections to guide the next workflow. Pipeline leads, deals and new customers are opportunities, not positive replies. Do not treat a successful sync as proof that someone replied.

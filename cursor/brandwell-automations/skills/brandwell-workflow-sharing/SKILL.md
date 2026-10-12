@@ -19,6 +19,15 @@ Three ways, and what each does:
 - Specific people: `workflows_share_people` with the email addresses the person gave and run or view. Each gets an email inviting them into their own BrandWell account, so the person confirms first. Never guess an address.
 - Public: `workflows_publish_public` publishes a page on brandwell.ai that anyone can read and save a copy of, or updates the page it already has. The person confirms first. The first time, the person accepts the workflow creator terms in the Share dialog; when the tool says so, give them the link and publish again after.
 
+Writing the public page: every page has the same blocks, and each lands in the styled page as written, so write them in the house style (plain, second person, short sentences, no em dash, never a data supplier's name):
+- title: what it does, in a few words. result: one line on what it gets the reader.
+- page.hero: one or two sentences under the title.
+- page.unlocks: 2 to 4 results for the reader, in their words.
+- page.how: for any step worth explaining, by its number, what it does (text) and what it finds (finds).
+- page.benefits: 3 or 4, each a short title and one line.
+- page.make_it_yours: 4 or 5 ways to adapt it, each a short title and one line (change any step, plug in their own tools at partner cost, build apps and internal tools from the same nodes, assign tasks to each teammate's agent).
+Any block left out is generated from the workflow, so a page is never missing one. Prices are never written here: the page shows its own From price.
+
 What a share carries: the steps, never the customer's connections, keys, webhook addresses or contacts. Whoever receives it can save their own copy; the original never changes.
 
 `workflows_share_media` says whether the page's video, GIF and link image are ready or still rendering, with their addresses. It renders nothing.

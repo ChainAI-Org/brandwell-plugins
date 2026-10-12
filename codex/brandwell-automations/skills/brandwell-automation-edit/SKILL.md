@@ -1,7 +1,7 @@
 ---
 name: brandwell-automation-edit
 description: "Change an automation that already exists: add, remove, move or change a step, add an if/else, a switch or a random split, add a Slack alert, or change what a step does. Reads the workflow, applies the change, shows what changed and asks before publishing. Use for 'edit', 'change', 'add a step', 'add a branch', 'remove the email step'. To start a new one use brandwell-automations."
-allowed-tools: automations_get automations_get_graph automations_edit automations_update_graph automations_update automations_registry automations_test_run automations_publish workflows_diff workflows_undo workflows_preview
+allowed-tools: automations_get automations_get_graph automations_edit automations_update_graph automations_update automations_registry automations_test_run automations_publish workflows_diff workflows_undo workflows_preview workflows_outputs workflows_set_outputs custom_steps_list slack_channels
 metadata:
   title: "Edit an automation's steps"
   service: automations
@@ -36,7 +36,9 @@ Branches in a graph:
 Rules that hold on every edit:
 - Name campaigns and ICPs as `{ "name": "..." }`, never guess an id. A step that sends, mails, posts or spends waits for approval unless the person chose otherwise; say which steps run without approval.
 - `limit` on an edit saves the workflow's spending limit with it. Paid steps need a finite limit: ask which amount, one question at a time, and show the price first (workflows_estimate in brandwell-automations).
-- A step that needs a connection (Slack, a CRM) needs it connected first: load brandwell-integrations, which also has the Slack alert steps.
-- Read the returned `problems` and fix what you can settle yourself, then say in one sentence what you changed. Ask only about real ambiguities, one question at a time. In the BrandWell Assistant, ask with ask_person, never with a question at the end of a reply.
+- A step that needs a connection (Slack, a CRM) needs it connected first: load brandwell-integrations, which also has the Post to Slack step and output. `slack_channels` lists the channels a Post to Slack step can name.
+- A step no action covers is a custom step: `custom_steps_list` shows the ready ones, each with the `add_step` that adds it (action `custom.run_step`); load brandwell-custom-steps to build one.
+- Where results go is the Output step, not a graph node: `workflows_outputs` and `workflows_set_outputs`.
+- Read the returned `problems` and fix what you can settle yourself, then say in one sentence what you changed. Ask only about real ambiguities, one question at a time. In the BrandWell app's chat, ask with ask_person, never with a question at the end of a reply.
 - Undo needs the current `draft_revision` from `workflows_preview`; it restores the prior draft and never the live version.
 - The draft is the deliverable. Publishing, running, resuming, archiving, sending and spending need the person's explicit request, and the tools that do them ask for their confirmation. Keep every request scoped to the current BrandWell project.

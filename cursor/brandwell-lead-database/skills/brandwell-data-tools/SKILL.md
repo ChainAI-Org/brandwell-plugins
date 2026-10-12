@@ -1,7 +1,7 @@
 ---
 name: brandwell-data-tools
 description: "Search and run BrandWell's data jobs: find companies, people, job posts, news, funding, social posts, reviews and web pages from BrandWell's data sources, and enrich, verify or fill in records the person already has, with the per-hit price before running and asynchronous results. Use for 'find companies that use a technology', 'find mobile numbers for these people', 'scrape the reviews of this company', 'enrich this list'. To match people by profile fields (title, seniority, company size) use brandwell-lead-database; to do it on a schedule use brandwell-growth-workflows."
-allowed-tools: data_tools_search data_tools_describe data_tools_request data_tools_estimate data_capability_run data_tools_run data_call_get enrich_person enrich_company
+allowed-tools: data_tools_search data_tools_describe data_tools_request data_tools_estimate data_capability_run data_tools_run data_call_get enrich_person enrich_company email_finder_find saved_tools_list
 metadata:
   title: "BrandWell data tools"
   service: data
@@ -21,6 +21,10 @@ Confirm facts with this skill's tools before stating them; what the page shows i
 7. Explain the actual price, source, cached or included status and meaningful misses. Surface structured Workflow Wallet, permission, plan and identity errors as given. Do not conceal a failure or suggest bypassing a limit.
 
 For a list of people, prefer an audience enrichment column and its batch workflow when those tools are available. Ask for the audience and desired fields instead of issuing hundreds of individual calls. If audience tools are not offered, explain that the batch integration is not available in this session.
+
+To find one person's business email from their name and company, use `email_finder_find` with their first and last name and the company's domain or name. It is quoted first and charged at cost for what runs; report the email with its status (valid, risky for a catch-all domain, not found). For a list, build a workflow with the find email step instead.
+
+The search covers the full Tools catalog, the web data tools included, with the Tools tab's sorts and its Proven filter (real usage and success behind a tool). The project's own workflows saved as tools are listed by `saved_tools_list`.
 
 When the person asks for a missing source, use data_tools_request with their description and an optional public website. It saves a request without spending money or contacting the source. Report the saved receipt or daily-limit error; do not promise availability or send a duplicate.
 

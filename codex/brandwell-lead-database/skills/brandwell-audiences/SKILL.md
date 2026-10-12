@@ -28,6 +28,6 @@ Use audiences_send_postcards to mail personalized postcards from a manual Direct
 
 
 Rules:
-- Go one step at a time and ask one question at a time. In the BrandWell Assistant, ask with ask_person; never put a question at the end of a reply.
+- Go one step at a time and ask one question at a time. In the BrandWell app's chat, ask with ask_person; never put a question at the end of a reply.
 - Show the price before anything that spends: a column fill, a postcard, an export or a paid lookup. Name how many exports a call uses.
 - When the Workflow Wallet is short, load brandwell-wallet and give the add-funds link. Never say funds were added. Keep every request scoped to the current BrandWell project.

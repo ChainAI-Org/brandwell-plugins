@@ -120,7 +120,7 @@
 ## Enrich and verify
 
 - `enrich-and-verify.ai-fit-score-on-new-rows`: As people join an audience, AI rates their fit for your offer from 1 to 10 with a one-line reason, and saves strong fits to a shortlist.
-- `enrich-and-verify.build-emails-from-pattern`: For people without a work email, looks up their company's email pattern once, builds the likely address, and verifies it.
+- `enrich-and-verify.build-emails-from-pattern`: From a first and last name plus a domain or company: finds the domain if it is missing and the company's email pattern, then checks every likely address in o...
 - `enrich-and-verify.company-email-format`: Looks up the email patterns a company uses (first.last, flast and so on) with how common each one is, and saves the pattern on the company.
 - `enrich-and-verify.complete-new-crm-contacts`: When a contact is created, fills in their role and company, checks the email with included checks, and syncs the completed record back to your CRM after you...
 - `enrich-and-verify.complete-socialstreams-leads`: When SocialStreams finds a contact for a social result, fills in the role and company and gets a verified work email.

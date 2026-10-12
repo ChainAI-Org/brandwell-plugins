@@ -31,5 +31,5 @@ Filters and repeats:
 - A company trigger keeps the company as its record, so a step that acts on a person cannot follow it; choose a trigger whose record is a person, and say so in one sentence.
 
 Rules:
-- Ask one question at a time. In the BrandWell Assistant, ask with ask_person, never with a question at the end of a reply.
+- Ask one question at a time. In the BrandWell app's chat, ask with ask_person, never with a question at the end of a reply.
 - The draft is the deliverable. Publishing needs the person's confirmation of that exact call, through brandwell-automations. Keep every request scoped to the current BrandWell project.

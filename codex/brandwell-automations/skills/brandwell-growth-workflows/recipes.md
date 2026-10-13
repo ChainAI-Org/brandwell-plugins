@@ -1,6 +1,6 @@
 # Recipe index
 
-12 outcomes and 309 recipes. Generated from the stored recipes. Read the full recipe with recipes_get before using one.
+12 outcomes and 310 recipes. Generated from the stored recipes. Read the full recipe with recipes_get before using one.
 
 ## Account research
 
@@ -138,7 +138,7 @@
 - `enrich-and-verify.remove-disposable-and-role-addresses`: Checks each new address in your sending audience for disposable domains and shared role inboxes like info@ or sales@, and moves them to a review audience ins...
 - `enrich-and-verify.replace-bounced-emails`: When an email bounces, stops the sequence and checks whether the person changed jobs.
 - `enrich-and-verify.score-contacts-by-email-confidence`: Each week, verifies every contact in an audience and sets an email confidence of high, medium or low.
-- `enrich-and-verify.send-ready-intent-pulls`: When a new Intent Scan arrives, keeps the ICP fits, finds and verifies each work email, and saves the ready people to a send-ready audience you can export or...
+- `enrich-and-verify.send-ready-intent-pulls`: Every morning, or when a new Intent Scan arrives, takes the people in the Intent Scan from the last 24 hours, keeps the ICP fits, finds and verifies each wor...
 - `enrich-and-verify.swap-personal-for-work-emails`: For people who only gave a personal email, finds where they work and then their verified work email, and marks the work address as preferred.
 - `enrich-and-verify.technology-data-for-target-accounts`: Each month, reads the tech stack of every target account, has AI mark whether they use a competitor, a tool that works with you, or neither, and saves in-mar...
 - `enrich-and-verify.verify-addresses-before-postcards`: Checks and normalizes each mailing address as people join your postcard audience.
@@ -147,7 +147,8 @@
 
 ## Find buyers
 
-- `find-buyers.build-total-market-from-icp`: Sizes your market from your saved ICP, saves every matching person to a Total market audience, and flags the ones already researching your topic.
+- `find-buyers.aimee-reaches-researchers-who-fit`: Every morning, takes the people in your Intent Scan from the last 24 hours and checks each one against your ICP.
+- `find-buyers.build-total-market-from-icp`: Counts everyone in the Lead Database who fits your saved ICP and saves the matches to a Total market audience.
 - `find-buyers.buying-committee-at-target-accounts`: Each week, finds the stakeholders at target accounts that are not fully mapped, has AI label each person as economic buyer, champion, evaluator or end user,...
 - `find-buyers.companies-using-competitors-tool`: Finds companies that run a competitor's tool, keeps the ones that fit your ICP and are not already on your list, and saves the people you sell to there.
 - `find-buyers.competitor-customer-page-to-accounts`: Reads a competitor's customers or case studies page, pulls out every customer it names, skips your own customers, and saves the rest with their stakeholders...
@@ -330,7 +331,7 @@
 - `start-conversations.first-lines-from-recent-posts`: When someone joins your outreach audience, BrandWell data reads their recent LinkedIn posts and AI writes a first line about something they actually said.
 - `start-conversations.follow-up-after-three-opens`: When someone opens the same email three times without replying, AIMEE drafts a short personal follow-up for you to approve.
 - `start-conversations.follow-up-webinar-attendees`: Your webinar tool posts each registrant to BrandWell.
-- `start-conversations.hot-accounts-to-slack`: When a company that fits your ICP shows intent and you already know it, sales gets a Slack message with the topic, where you know them from and the owner.
+- `start-conversations.hot-accounts-to-slack`: When a company that fits your ICP shows intent and you already know it, sales gets a Slack message with the topic and where you know them from.
 - `start-conversations.linkedin-after-email-silence`: Six business days after the first email, anyone who has not replied gets a LinkedIn connection note drafted by AIMEE that does not repeat the email.
 - `start-conversations.lookalikes-of-closed-won`: When a deal closes won, Lead Database finds people like your new customer's buyer at similar companies and queues them for your outreach campaign after you a...
 - `start-conversations.multi-thread-deals`: Every week, for each account with an open deal, BrandWell finds up to three more decision makers, verifies their emails, has AIMEE research them and enrolls...

@@ -1,6 +1,6 @@
 # Recipe index
 
-12 outcomes and 310 recipes. Generated from the stored recipes. Read the full recipe with recipes_get before using one.
+12 outcomes and 311 recipes. Generated from the stored recipes. Read the full recipe with recipes_get before using one.
 
 ## Account research
 
@@ -345,5 +345,6 @@
 - `start-conversations.rescue-bounced-prospects`: When an email hard-bounces, BrandWell checks whether the person changed jobs.
 - `start-conversations.revive-returning-prospects`: When someone you emailed more than 60 days ago returns to your site and reads at least two pages, AIMEE drafts a short check-in that picks up the old thread...
 - `start-conversations.route-interested-replies`: AI reads every reply.
+- `start-conversations.social-buying-team-brief`: Find a relevant need on LinkedIn or X, draft a helpful comment, research the author and colleagues, and prepare one contextual email for review.
 - `start-conversations.speed-to-lead-demo-requests`: When someone fills in your demo form, BrandWell enriches the person and company, AIMEE researches why now, and a personal reply with times is drafted for you...
 - `start-conversations.surge-buying-committee`: When several people from an ICP company visit your site, TrafficID finds the stakeholders, BrandWell fills and verifies missing emails, and the committee is...

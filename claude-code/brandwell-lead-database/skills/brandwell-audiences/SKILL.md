@@ -1,7 +1,7 @@
 ---
 name: brandwell-audiences
 description: "Build and manage audiences: static lists and live audiences from rules, a plain-words description or a saved ICP ('make a new audience of VPs of sales in Texas'), preview who matches, add or remove people, add enrichment columns, and send an audience to an Outreach campaign or a postcard campaign. For searching the Lead Database itself use brandwell-lead-database, for one person's record use brandwell-people-and-records."
-allowed-tools: audiences_rules_from_text audiences_preview audiences_list audiences_get audiences_create audiences_update audiences_add_people audiences_remove_people audiences_add_column audiences_run_column audiences_add_to_campaign audiences_send_postcards marketpulse_list_feeds
+allowed-tools: audiences_rules_from_text audiences_preview audiences_list audiences_get audiences_cell_log audiences_create audiences_update audiences_add_people audiences_remove_people audiences_add_column audiences_run_column audiences_add_to_campaign audiences_send_postcards marketpulse_list_feeds
 metadata:
   title: "Audiences"
   service: records

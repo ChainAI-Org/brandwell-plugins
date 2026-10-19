@@ -2,6 +2,10 @@
 
 The BrandWell plugins for Claude Code and Codex share one version.
 
+## 0.7.1 (2026-10-19)
+
+- Skills updated to match BrandWell (100c3bd49f3d).
+
 ## 0.7.0 (2026-10-19)
 
 - The Automations skills use the redesigned Automations words: you activate a draft (it then reads Active) and apply changes to an active automation, instead of publishing it.

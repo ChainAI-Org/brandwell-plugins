@@ -18,7 +18,7 @@ Reading:
 
 Spending limits:
 - A limit says how much a workflow or the workspace may spend in a day or a month and what happens at the limit: hold (paid steps wait), included_only (go on without paid steps) or pause. "Only spend $20 a day on this" is a day limit of 20 on that workflow; ask which at-limit behavior they want, one question.
-- `wallet_set_limits` produces a fresh quote and the person approves it before it applies. Explain the scope, period, amount and at-limit behavior. Null means no limit and must be shown and approved explicitly. Never forge confirmation tokens or reuse an approval after changing arguments. Lowering a limit never spends. To set a limit while publishing, `automations_publish` takes the same `limit`.
+- `wallet_set_limits` produces a fresh quote and the person approves it before it applies. Explain the scope, period, amount and at-limit behavior. Null means no limit and must be shown and approved explicitly. Never forge confirmation tokens or reuse an approval after changing arguments. Lowering a limit never spends. To set a limit while activating, `automations_publish` takes the same `limit`.
 - No tool here can change the agent auto-approve budget.
 
 When the wallet is short:

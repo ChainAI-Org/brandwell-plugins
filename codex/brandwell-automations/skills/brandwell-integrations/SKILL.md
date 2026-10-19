@@ -21,10 +21,10 @@ Slack is one connection for the project (Project settings, Slack), on every plan
 2. Ask which channel, offering the real ones.
 3. A message for each record: read the workflow with `automations_get_graph` and the step in `automations_registry`, then add it with `automations_edit`: `add_step` with action `integration.slack_post` and inputs `channel` (#name or its id), `message` written with the record's fields such as `{{subject.label}} at {{payload.company}} just asked about pricing.`, `style` card (the record's name, company and title with a button that opens the person in BrandWell) or plain, `title` and `link`. To reply in the thread of an earlier Slack step, give `thread_ts` that step's ts output. Put it after the step it follows, or on the branch it belongs to.
 4. A run's results in a channel: `workflows_set_outputs` with `slack` in the targets for the way the workflow starts and `slack_channel`. `workflows_outputs` shows what is set now.
-5. Say what it will look like and which runs it applies to, and ask before publishing (brandwell-automation-edit).
+5. Say what it will look like and which runs it applies to, and ask before activating it or applying the changes (brandwell-automation-edit).
 
 Discord, or a chat app reached only through an incoming webhook address, uses the `integration.chat_message` step: `integrations_chat_connections` lists the Slack and Discord apps connected through Outreach. A webhook address is a secret: the person types it into the step on the page; never repeat it. `integrations_test_chat_message` posts a sample to such a step's channel, only when the person asks.
 
 Rules:
-- Post to Slack posts to the team's own channel and runs without approval by default; set approval_required on the step when the person wants to review each post, and say which. Posting results to Slack, or changing where a live workflow's results go, needs the person's confirmation.
+- Post to Slack posts to the team's own channel and runs without approval by default; set approval_required on the step when the person wants to review each post, and say which. Posting results to Slack, or changing where an active workflow's results go, needs the person's confirmation.
 - Never print a webhook address, token or key. Keep every request scoped to the current BrandWell project.

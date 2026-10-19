@@ -1,6 +1,6 @@
 # BrandWell Lead Database for Codex
 
-BrandWell Lead Database skills and MCP tools: search people and companies, build audiences, enrich records with data tools and waterfalls, all paid from your Workflow Wallet. For Codex; BrandWell has one plugin like this per product.
+BrandWell Lead Database skills and MCP tools: search people and companies, build audiences, enrich records with data tools and your Data provider order, all paid from your Workflow Wallet. For Codex; BrandWell has one plugin like this per product.
 
 Sign-in happens in your browser. The first time BrandWell connects, sign in to BrandWell, tick the projects the AI may use and click Allow. No API key is needed. The tools you can use follow your BrandWell plan.
 

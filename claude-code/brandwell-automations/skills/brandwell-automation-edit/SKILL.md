@@ -1,6 +1,6 @@
 ---
 name: brandwell-automation-edit
-description: "Change an automation that already exists: add, remove, move or change a step, add an if/else, a switch or a random split, add a Slack alert, or change what a step does. Reads the workflow, applies the change, shows what changed and asks before publishing. Use for 'edit', 'change', 'add a step', 'add a branch', 'remove the email step'. To start a new one use brandwell-automations."
+description: "Change an automation that already exists: add, remove, move or change a step, add an if/else, a switch or a random split, add a Slack alert, or change what a step does. Reads the workflow, applies the change, shows what changed and asks before activating it or applying the changes. Use for 'edit', 'change', 'add a step', 'add a branch', 'remove the email step'. To start a new one use brandwell-automations."
 allowed-tools: automations_get automations_get_graph automations_edit automations_update_graph automations_update automations_registry automations_test_run automations_publish workflows_diff workflows_undo workflows_preview workflows_outputs workflows_set_outputs custom_steps_list slack_channels
 metadata:
   title: "Edit an automation's steps"
@@ -12,14 +12,14 @@ metadata:
 
 Confirm facts with this skill's tools before stating them; what the page shows is a starting point, not the answer. When no tool can confirm something, say so and offer BrandWell support. Never say BrandWell cannot do something unless a tool says so.
 
-Goal: make the change the person asked for on the workflow they named, show them what changed, and leave publishing to them.
+Goal: make the change the person asked for on the workflow they named, show them what changed, and leave activating or applying the changes to them.
 
 How to edit:
 1. Find the workflow. When the page has one open, that is the one. Otherwise read the person's words against `automations_get` or the list the setup skill reads; ask which one only when two match.
 2. Read it with `automations_get_graph`. It returns every node with its id and label, every path, an `outline` in plain words, and the `draft_revision`. Read `automations_registry` before adding a step, and use only the action keys it returned.
 3. Change it with `automations_edit` (small changes) or `automations_update_graph` (the whole graph). Both take the `draft_revision` you last read and refuse a draft that changed since: read it again and redo the change. Each answer returns the new `draft_revision`, the `summary` and `problems`.
 4. Show the result before you move on: `workflows_diff` after `automations_update`, and for a graph change the returned `summary`, in plain words, naming each step by its label and never its key or id. Say what changed, what stayed and what it now does on each path.
-5. Test it when the person is unsure (`automations_test_run`). Publishing is separate: `automations_publish` only when they say publish or turn it on, and it needs their confirmation of that exact call. Never say an edit is live until the tool confirmed it.
+5. Test it when the person is unsure (`automations_test_run`). Activating a draft, or applying the changes to an active automation, is separate: `automations_publish` only when they say to activate it, apply the changes, publish it or turn it on, and it needs their confirmation of that exact call. Never say an edit is active until the tool confirmed it.
 
 Step edits (`automations_edit`, ops applied together or not at all, up to 25):
 - `add_step` puts an `action`, a `check` (an if/else) or a `stop` after a node (`after`) on one of its outcomes (`when`). Left out, `after` is the end of the straight line. A step added to a path that already continues is inserted and the old way carries on after it. An if/else inserted that way keeps the old way on yes and ends the run on no.
@@ -40,5 +40,5 @@ Rules that hold on every edit:
 - A step no action covers is a custom step: `custom_steps_list` shows the ready ones, each with the `add_step` that adds it (action `custom.run_step`); load brandwell-custom-steps to build one.
 - Where results go is the Output step, not a graph node: `workflows_outputs` and `workflows_set_outputs`.
 - Read the returned `problems` and fix what you can settle yourself, then say in one sentence what you changed. Ask only about real ambiguities, one question at a time. In the BrandWell app's chat, ask with ask_person, never with a question at the end of a reply.
-- Undo needs the current `draft_revision` from `workflows_preview`; it restores the prior draft and never the live version.
-- The draft is the deliverable. Publishing, running, resuming, archiving, sending and spending need the person's explicit request, and the tools that do them ask for their confirmation. Keep every request scoped to the current BrandWell project.
+- Undo needs the current `draft_revision` from `workflows_preview`; it restores the prior draft and never the active version.
+- The draft is the deliverable. Activating, applying changes, running, resuming, archiving, sending and spending need the person's explicit request, and the tools that do them ask for their confirmation. Keep every request scoped to the current BrandWell project.

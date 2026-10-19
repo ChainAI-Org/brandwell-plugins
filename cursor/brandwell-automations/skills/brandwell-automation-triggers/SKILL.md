@@ -19,9 +19,9 @@ How to choose:
 2. Match the person's words to the label and fields: "someone books a meeting" is the Outreach meeting trigger, "a lead score passes 80" is the score trigger, "every Monday" is `platform.schedule`, "when my CRM deal changes" needs the webhook or the CRM trigger the registry lists. Say which trigger you chose by its label, never its key.
 3. When a trigger has `needs_code` true, it has no source yet. Say so plainly: the automation can be built and saved now and will start once BrandWell connects the source. Offer the nearest trigger that does fire, and ask which they prefer, one question.
 4. When `setup` says something must be installed or connected, tell the person how, in one or two sentences, and give the link. For a connection that has a link, call `integrations_status` to see whether it is already connected, and when it is not, `integrations_connect_link` for the link. Only they can connect it. Never claim a trigger will fire when `setup` says its source is missing.
-5. Set it. On a new draft, give it as `trigger` in the spec (brandwell-automations). On an existing one, read its graph with `automations_get_graph`, then change it with `automations_edit` and the op `set_trigger` (`event`, `filters`, `once_per`, `schedule`), which works on a branching automation too. Show the change in plain words, and ask before publishing.
+5. Set it. On a new draft, give it as `trigger` in the spec (brandwell-automations). On an existing one, read its graph with `automations_get_graph`, then change it with `automations_edit` and the op `set_trigger` (`event`, `filters`, `once_per`, `schedule`), which works on a branching automation too. Show the change in plain words, and ask before activating it or applying the changes.
 
-Schedules (`platform.schedule`): ask how often, the time and the time zone, one question at a time. A schedule is `{ "every": "hour|day|week|month", "at": "09:00", "weekday": 1, "day_of_month": 1, "timezone": "America/Chicago" }`, where weekday is 0 for Sunday and Monday is 1. Give it as `schedule` in the spec, or with `set_trigger` on an existing automation. A scheduled automation cannot publish without one.
+Schedules (`platform.schedule`): ask how often, the time and the time zone, one question at a time. A schedule is `{ "every": "hour|day|week|month", "at": "09:00", "weekday": 1, "day_of_month": 1, "timezone": "America/Chicago" }`, where weekday is 0 for Sunday and Monday is 1. Give it as `schedule` in the spec, or with `set_trigger` on an existing automation. A scheduled automation cannot be activated without one.
 
 Webhooks (`inbound.webhook`): the address is created with the automation. Read it with `automations_get` (`inbound_webhook`) and tell only the person; anyone who has it can start the automation. Say what the other system must send: a POST to that address with the record's fields as JSON.
 
@@ -32,4 +32,4 @@ Filters and repeats:
 
 Rules:
 - Ask one question at a time. In the BrandWell app's chat, ask with ask_person, never with a question at the end of a reply.
-- The draft is the deliverable. Publishing needs the person's confirmation of that exact call, through brandwell-automations. Keep every request scoped to the current BrandWell project.
+- The draft is the deliverable. Activating needs the person's confirmation of that exact call, through brandwell-automations. Keep every request scoped to the current BrandWell project.

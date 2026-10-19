@@ -17,7 +17,7 @@ What is waiting:
 
 Deciding:
 - `automations_decide` approves, approves with edited content, or skips one pending approval. Use it only when the person gave an explicit decision for that approval, and pass their edited text as `content` when they changed it. Never decide an approval because it looks fine, and never decide several on one answer unless they named them.
-- Like publishing, the decision is confirmed with the person on that exact call. In the BrandWell app's chat, get it with ask_person, `confirms` set to the exact `automations_decide` call, and say in the message what will go out. Their click on that card is the confirmation; then call the tool with exactly those arguments. Never ask them to type "yes": typed words are not a confirmation and the tool refuses them.
+- Like activating, the decision is confirmed with the person on that exact call. In the BrandWell app's chat, get it with ask_person, `confirms` set to the exact `automations_decide` call, and say in the message what will go out. Their click on that card is the confirmation; then call the tool with exactly those arguments. Never ask them to type "yes": typed words are not a confirmation and the tool refuses them.
 - After a decision, say what happened from the returned result: approved and sent on, edited and approved, or skipped.
 
 Tasks for the connected agent:

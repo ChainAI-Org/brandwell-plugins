@@ -2,6 +2,11 @@
 
 The BrandWell plugins for Claude Code and Codex share one version.
 
+## 0.7.0 (2026-10-19)
+
+- The Automations skills use the redesigned Automations words: you activate a draft (it then reads Active) and apply changes to an active automation, instead of publishing it.
+- The enrichment skill is now Data provider order, and provider keys are entered under Tools, Your keys in the BrandWell app.
+
 ## 0.6.15 (2026-10-16)
 
 - Skills updated to match BrandWell (4559365a6502).

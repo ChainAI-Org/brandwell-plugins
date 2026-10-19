@@ -14,7 +14,7 @@ Confirm facts with this skill's tools before stating them; what the page shows i
 
 1. Search for the job in the person's words. When the Tools library is enabled, categories, sources, price, sort, group and cursor match its page exactly. Preserve the returned job id for describe; a routed job id is a capability and a product job links to its product workflows. The list price ignores saved keys, while detail shows the selected project's key sources at zero Workflow Wallet cost. The catalog is discovered through search and describe, not thousands of separate tool definitions.
 2. Describe the selected tool or capability. Check required identity combinations, filters, output fields, billing terms and current prices. Never invent an identifier, price or accepted input.
-3. Prefer a routed capability with the project waterfall enabled. It tries the project's sources and stops when a result is found. Use a specific tool only when the person needs that source or there is no routed capability.
+3. Prefer a routed capability that uses the project's Data provider order. It tries the project's sources and stops when a result is found. Use a specific tool only when the person needs that source or there is no routed capability.
 4. Estimate before spending and explain the maximum. "Charged only on a hit" means that source charges when it finds a result. Other sources may charge even for a miss; the receipt records those attempts too. An unknown estimate is not free.
 5. Run with an explicit maximum the person requested or approved. A small data-only spend can use an administrator's enabled budget. Any send, publishing or CRM write needs human confirmation regardless of price. A quote token is not approval. When the result needs confirmation, show the approval flow and wait for the person's real approval; never supply a confirmed flag or claim approval yourself.
 6. If a result is pending or uncertain, show its call reference and use data_call_get. Do not make a second paid request to obtain the same result. Protected reservations remain until an authoritative receipt settles them.
@@ -28,4 +28,4 @@ The search covers the full Tools catalog, the web data tools included, with the 
 
 When the person asks for a missing source, use data_tools_request with their description and an optional public website. It saves a request without spending money or contacting the source. Report the saved receipt or daily-limit error; do not promise availability or send a duplicate.
 
-Provider key values never belong in chat or tool arguments. Direct the person to the Enrichment page to enter a key. Do not save, reveal or delete one through an agent tool.
+Provider key values never belong in chat or tool arguments. Direct the person to Automations › Settings › Your keys to enter a key. Do not save, reveal or delete one through an agent tool.

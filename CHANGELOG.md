@@ -2,6 +2,12 @@
 
 The BrandWell plugins for Claude Code and Codex share one version.
 
+## 0.8.0 (2026-10-20)
+
+- BrandWell for Gemini CLI: one extension with every skill, in gemini/brandwell.
+- BrandWell for OpenAI's plugin directory (ChatGPT and Codex): one plugin with every skill, in chatgpt/brandwell. It follows the open Agent Plugins format, so it is also a Kiro Power and a Perplexity custom plugin.
+- The Claude Code plugins carry BrandWell's icon and its documentation, support, privacy and terms links for Anthropic's plugin directory.
+
 ## 0.7.5 (2026-10-20)
 
 - Skills updated to match BrandWell (3d7bb8a7cb81).

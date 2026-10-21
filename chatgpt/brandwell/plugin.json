@@ -1,0 +1,53 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "brandwell",
+  "version": "0.8.0",
+  "description": "Run BrandWell marketing automations, audiences, data tools and buyer intent from your AI assistant.",
+  "author": {
+    "name": "BrandWell",
+    "url": "https://brandwell.ai"
+  },
+  "homepage": "https://brandwell.ai",
+  "repository": "https://github.com/ChainAI-Org/brandwell-plugins",
+  "license": "MIT",
+  "keywords": [
+    "marketing-automation",
+    "automations",
+    "lead-data",
+    "audiences",
+    "buyer-intent",
+    "brandwell",
+    "seo",
+    "ai-visibility",
+    "marketing",
+    "outreach",
+    "mcp"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "BrandWell",
+        "shortDescription": "Automate marketing and sales",
+        "longDescription": "BrandWell lets your AI assistant run your marketing and sales automations in your own BrandWell account. Describe what you want in a sentence and it builds the automation as a draft for you to review, then activates it, tests it on a record and shows you every run. Steps that need you wait for your approval.\n\nIt works with the rest of BrandWell too: find people and companies and build audiences, fill in missing details with data tools, see who is in market with MarketPulse and who visits your website with TrafficID, check your AI and search visibility, plan and write content in RankWell, and run email and postcard campaigns.\n\nYou sign in with your BrandWell account and choose which projects the assistant may use. Tools that change something, send email or mail, publish, or use credits are labelled that way, so your AI app can ask you before it uses them. What you can use follows your BrandWell plan.",
+        "developerName": "BrandWell",
+        "category": "Business",
+        "capabilities": [
+          "Interactive",
+          "Read",
+          "Write"
+        ],
+        "websiteURL": "https://brandwell.ai",
+        "privacyPolicyURL": "https://brandwell.ai/privacy-policy/",
+        "termsOfServiceURL": "https://brandwell.ai/terms/",
+        "defaultPrompt": [
+          "What automations do I have, and is anything waiting for my approval?",
+          "Build an automation that adds new in-market buyers for what we sell to an audience every week.",
+          "Who visited our website this week, and which of them fit our ICP?"
+        ],
+        "brandColor": "#5b16d6",
+        "composerIcon": "./assets/logo.png",
+        "logo": "./assets/logo.png"
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
 {
   "name": "brandwell-lead-database",
   "displayName": "BrandWell Lead Database",
-  "version": "0.7.5",
+  "version": "0.8.0",
   "description": "BrandWell Lead Database skills and MCP tools: search people and companies, build audiences, enrich records with data tools and your Data provider order, all paid from your Workflow Wallet. Signs in through your browser.",
   "author": {
     "name": "BrandWell",
@@ -16,5 +16,10 @@
     "marketing",
     "outreach",
     "mcp"
-  ]
+  ],
+  "icon": "./logo.png",
+  "documentationUrl": "https://github.com/ChainAI-Org/brandwell-plugins#readme",
+  "supportUrl": "https://brandwell.ai/about/#contact",
+  "privacyPolicyUrl": "https://brandwell.ai/privacy-policy/",
+  "termsOfServiceUrl": "https://brandwell.ai/terms/"
 }

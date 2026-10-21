@@ -1,7 +1,7 @@
 {
   "name": "brandwell-outreach",
   "displayName": "BrandWell Outreach",
-  "version": "0.7.5",
+  "version": "0.8.0",
   "description": "BrandWell Outreach skills and MCP tools: email campaigns, feeds and contacts, and cold emails that get replies. Signs in through your browser.",
   "author": {
     "name": "BrandWell",
@@ -16,5 +16,10 @@
     "marketing",
     "outreach",
     "mcp"
-  ]
+  ],
+  "icon": "./logo.png",
+  "documentationUrl": "https://github.com/ChainAI-Org/brandwell-plugins#readme",
+  "supportUrl": "https://brandwell.ai/about/#contact",
+  "privacyPolicyUrl": "https://brandwell.ai/privacy-policy/",
+  "termsOfServiceUrl": "https://brandwell.ai/terms/"
 }

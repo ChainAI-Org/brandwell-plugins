@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "ai.brandwell/brandwell",
   "title": "BrandWell",
-  "description": "Work in your BrandWell projects: AI and search visibility, content, links, outreach and more.",
-  "version": "0.7.5",
+  "description": "Run BrandWell marketing automations, audiences, data tools and buyer intent from your AI assistant.",
+  "version": "0.8.0",
   "websiteUrl": "https://brandwell.ai",
   "icons": [
     {

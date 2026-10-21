@@ -32,6 +32,10 @@ codex plugin marketplace add ChainAI-Org/brandwell-plugins && codex plugin add b
 
 Cursor: open Customize, find the BrandWell plugins in the marketplace and click Install. Until they are listed there, copy a plugin's folder, such as `cursor/brandwell-visibility/`, to `~/.cursor/plugins/local/brandwell-visibility` and reload Cursor.
 
+Gemini CLI: one extension with every skill. Copy `gemini/brandwell/` from this repository and run `gemini extensions install <that folder>`, then `/mcp auth brandwell` in Gemini CLI to sign in.
+
+ChatGPT and Codex from OpenAI's plugin directory: one plugin with every skill, `chatgpt/brandwell/`, once it is listed there.
+
 ## Sign in
 
 There is no API key to copy. The first time a plugin connects, your browser opens BrandWell: sign in, tick the projects the AI may use and click Allow. The tools you can use follow your BrandWell plan, whichever plugins you install.
@@ -84,6 +88,8 @@ codex mcp add brandwell --url https://portal.brandwell.ai/mcp --bearer-token-env
 - `codex/brandwell-automations/`: BrandWell Automations for Codex
 - `cursor/brandwell-automations/`: BrandWell Automations for Cursor
 - `.claude-plugin/marketplace.json`, `.agents/plugins/marketplace.json` and `.cursor-plugin/marketplace.json`: the marketplace files for each client
+- `gemini/brandwell/`: BrandWell for Gemini CLI, one extension with every skill
+- `chatgpt/brandwell/`: BrandWell for OpenAI's plugin directory (ChatGPT and Codex), one plugin with every skill, and `chatgpt/review-cases.json`, the prompts its review runs
 - `server.json`: BrandWell's MCP server for the MCP Registry
 
 This repository is built from BrandWell's portal source; changes made here by hand are overwritten by the next release. See CHANGELOG.md for what changed in each version.

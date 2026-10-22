@@ -16,6 +16,6 @@ This package runs nothing on your computer: it has no hooks, scripts or local se
 
 ## Support
 
-Email help@brandwell.ai. Terms of service: https://brandwell.ai/terms/.
+Email support@brandwell.ai. Terms of service: https://brandwell.ai/terms/.
 
 Install instructions are in the README of https://github.com/ChainAI-Org/brandwell-plugins.

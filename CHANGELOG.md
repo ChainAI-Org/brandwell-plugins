@@ -2,6 +2,10 @@
 
 The BrandWell plugins for Claude Code and Codex share one version.
 
+## 0.8.1 (2026-10-22)
+
+- Skills updated to match BrandWell (5aa81841f4d7).
+
 ## 0.8.0 (2026-10-20)
 
 - BrandWell for Gemini CLI: one extension with every skill, in gemini/brandwell.

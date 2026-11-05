@@ -22,6 +22,8 @@ Confirm facts with this skill's tools before stating them; what the page shows i
 
 For a list of people, prefer an audience enrichment column and its batch workflow when those tools are available. Ask for the audience and desired fields instead of issuing hundreds of individual calls. If audience tools are not offered, explain that the batch integration is not available in this session.
 
+For anything that should keep running, or a list larger than a few records, build a workflow instead (brandwell-automations): one data step per job (find a mobile, find an email, verify it, enrich a person or company, find a domain, a Google keyword or social lookup), started the way brandwell-automation-triggers describes (an uploaded list, an audience or Google Sheet with new people as they come or on a schedule, by hand, or from an app). Each data step asks the project's providers in one request and keeps the defaults unless the person asks to change them (brandwell-waterfalls).
+
 To find one person's business email from their name and company, use `email_finder_find` with their first and last name and the company's domain or name. It is quoted first and charged at cost for what runs; report the email with its status (valid, risky for a catch-all domain, not found). For a list, build a workflow with the find email step instead.
 
 The search covers the full Tools catalog, the web data tools included, with the Tools tab's sorts and its Proven filter (real usage and success behind a tool). The project's own workflows saved as tools are listed by `saved_tools_list`.

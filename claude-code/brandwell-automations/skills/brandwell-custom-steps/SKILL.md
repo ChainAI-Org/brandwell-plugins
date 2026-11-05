@@ -5,7 +5,7 @@ allowed-tools: custom_steps_list custom_steps_get custom_steps_draft custom_step
 metadata:
   title: "Custom steps and connections"
   service: automations
-  page: "#/project-settings/custom-steps"
+  page: "#/automations/settings/custom-steps"
 ---
 
 # Custom steps and connections

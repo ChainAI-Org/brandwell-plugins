@@ -30,7 +30,7 @@ What it costs:
 
 Building and changing:
 - From a goal, start with a recipe (brandwell-growth-workflows); from a sentence, brandwell-automations. To change one that exists, branches included, read it with `automations_get_graph` and change it with `automations_edit` and its `draft_revision` (brandwell-automation-edit). Triggers are in brandwell-automation-triggers.
-- To find a step, search with `tools_search`; for data, search the full Tools catalog with `data_tools_search` (its sorts and the Proven filter match the Tools tab). A data job joins a workflow as Run any data tool with the inputs it declares.
+- To find a step, search with `tools_search`; for data, search the full Tools catalog with `data_tools_search` (its sorts and the Proven filter match the Tools tab). A data job joins a workflow as Run a catalog tool with the inputs it declares.
 - When no step does it, build a custom step (brandwell-custom-steps): Combine steps, Call an API through a saved connection, an AI step with typed outputs, or a Transform. It passes a test before it is ready, then joins the workflow as a step.
 - To use the customer's own tool: a saved connection (the person adds its key in Automations settings, Your keys; you never take, ask for or repeat a key) and a Call an API custom step. A CRM uses its own sync step, or sends to the workflow's incoming webhook trigger. Slack uses the Post to Slack step or output (brandwell-integrations).
 

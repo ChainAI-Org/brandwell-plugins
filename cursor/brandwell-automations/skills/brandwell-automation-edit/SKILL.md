@@ -24,7 +24,7 @@ How to edit:
 Step edits (`automations_edit`, ops applied together or not at all, up to 25):
 - `add_step` puts an `action`, a `check` (an if/else) or a `stop` after a node (`after`) on one of its outcomes (`when`). Left out, `after` is the end of the straight line. A step added to a path that already continues is inserted and the old way carries on after it. An if/else inserted that way keeps the old way on yes and ends the run on no.
 - `remove_step` takes a step out and joins its neighbours. `move_step` puts an existing step after another node.
-- `set_step_inputs` changes a step's inputs (null removes one; `replace` swaps them all), or an if/else's own check (key, operator, value, prompt). `approval` and `on_error` change how the step waits and fails.
+- `set_step_inputs` changes a step's inputs (null removes one; `replace` swaps them all), or an if/else's own check (key, operator, value, prompt). `approval` and `on_error` change how the step waits and fails; `retry_wait_minutes` (1 to 1440, default 1) is the wait before each of its 3 retries.
 - `set_trigger` changes what starts it: `event`, `filters`, `once_per` and, for a scheduled automation, `schedule`. brandwell-automation-triggers says how to choose one.
 - A new node gets an `id` you choose, so a later op in the same call can name it.
 

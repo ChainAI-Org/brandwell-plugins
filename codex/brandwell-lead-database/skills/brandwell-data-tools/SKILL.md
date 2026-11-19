@@ -1,7 +1,7 @@
 ---
 name: brandwell-data-tools
 description: "Search and run BrandWell's data jobs: find companies, people, job posts, news, funding, social posts, reviews and web pages from BrandWell's data sources, and enrich, verify or fill in records the person already has, with the per-hit price before running and asynchronous results. Use for 'find companies that use a technology', 'find mobile numbers for these people', 'scrape the reviews of this company', 'enrich this list'. To match people by profile fields (title, seniority, company size) use brandwell-lead-database; to do it on a schedule use brandwell-growth-workflows."
-allowed-tools: data_tools_search data_tools_describe data_tools_request data_tools_estimate data_capability_run data_tools_run data_call_get enrich_person enrich_company email_finder_find saved_tools_list
+allowed-tools: data_tools_search data_tools_describe data_tools_request data_tools_estimate data_call_get enrich_person enrich_company email_finder_find saved_tools_list
 metadata:
   title: "BrandWell data tools"
   service: data
@@ -16,7 +16,7 @@ Confirm facts with this skill's tools before stating them; what the page shows i
 2. Describe the selected tool or capability. Check required identity combinations, filters, output fields, billing terms and current prices. Never invent an identifier, price or accepted input.
 3. Prefer a routed capability that uses the project's Data provider order. It tries the project's sources and stops when a result is found. Use a specific tool only when the person needs that source or there is no routed capability.
 4. Estimate before spending and explain the maximum. "Charged only on a hit" means that source charges when it finds a result. Other sources may charge even for a miss; the receipt records those attempts too. An unknown estimate is not free.
-5. Run with an explicit maximum the person requested or approved. A small data-only spend can use an administrator's enabled budget. Any send, publishing or CRM write needs human confirmation regardless of price. A quote token is not approval. When the result needs confirmation, show the approval flow and wait for the person's real approval; never supply a confirmed flag or claim approval yourself.
+5. Running one data tool or capability happens only inside BrandWell (the Assistant and AIMEE), because it sends the input straight to a data partner. When no run tool is offered here, give the estimate and send the person to the Tools page (#/tools), or build a workflow for it (brandwell-automations). When a run tool is offered: run with an explicit maximum the person requested or approved. A small data-only spend can use an administrator's enabled budget. Any send, publishing or CRM write needs human confirmation regardless of price. A quote token is not approval. When the result needs confirmation, show the approval flow and wait for the person's real approval; never supply a confirmed flag or claim approval yourself.
 6. If a result is pending or uncertain, show its call reference and use data_call_get. Do not make a second paid request to obtain the same result. Protected reservations remain until an authoritative receipt settles them.
 7. Explain the actual price, source, cached or included status and meaningful misses. Surface structured Workflow Wallet, permission, plan and identity errors as given. Do not conceal a failure or suggest bypassing a limit.
 

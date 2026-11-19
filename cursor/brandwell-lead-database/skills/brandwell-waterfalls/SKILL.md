@@ -1,7 +1,7 @@
 ---
 name: brandwell-waterfalls
 description: "Read and change this project's data providers for any lookup (emails, mobiles, enrichment, companies and domains, Google keyword data, social, web): which providers are on, which to try first, the most per lookup and miss rules, with exact prices at cost. Use when the person wants cheaper or better lookups, asks why a provider was used or skipped, or wants to inspect or test a saved provider key."
-allowed-tools: waterfall_list waterfall_get waterfall_update waterfall_reset own_keys_list own_keys_set_use own_keys_test
+allowed-tools: waterfall_list waterfall_get waterfall_update waterfall_reset own_keys_list own_keys_set_use
 metadata:
   title: "BrandWell Data provider order"
   service: data
@@ -28,6 +28,6 @@ For a requested settings change, pass only the requested fields and the version 
 
 Reset restores Best value and re-enables providers while preserving the price limit and miss rule. On a version conflict, read the latest settings, explain the conflict and apply only the change the person requested. Report the saved result, not the intended result.
 
-Administrators may list masked keys or request a test of a saved key. A provider test may consume the customer's provider credit of unknown cost, even though it costs zero from the Workflow Wallet. Show the server quote and wait for real human approval. A token alone is not approval. Reuse the same confirmed execution on retry; do not request another test after an uncertain result. Replacing or removing the saved key requires a fresh confirmation.
+Administrators may list masked keys. Testing a saved key calls that provider, so it happens only inside BrandWell: when no key test tool is offered here, send them to Automations › Settings › Your keys. When it is offered, they may request a test of a saved key. A provider test may consume the customer's provider credit of unknown cost, even though it costs zero from the Workflow Wallet. Show the server quote and wait for real human approval. A token alone is not approval. Reuse the same confirmed execution on retry; do not request another test after an uncertain result. Replacing or removing the saved key requires a fresh confirmation.
 
 Never ask for, save, reveal, replace or remove a provider key through chat or tool arguments. Direct those actions to Automations › Settings › Your keys (#/automations/settings/keys). The key list contains only masks and status. Read-only members can inspect routing but cannot change it.

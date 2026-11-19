@@ -1,7 +1,7 @@
 ---
 name: brandwell-social-streams
-description: "Read SocialStreams opportunities: social posts, hiring signals and creators found for this Company Project; list, run, pause and resume its streams; and, for the assigned AIMEE employee, claim and review opportunities. Use when the person asks about social posts their streams collected, creators to work with, or their social streams. It reads what the project's streams collected; it does not search for new companies or people."
-allowed-tools: get_social_opportunities socialstreams_list_streams socialstreams_run_stream socialstreams_pause_stream socialstreams_resume_stream socialstreams_update_opportunity socialstreams_queue_outreach account_plan_status onboarding_status onboarding_start_task
+description: "Read SocialStreams opportunities: social posts, hiring signals and creators found for this Company Project; list, create, run, pause and resume its streams; and, for the assigned AIMEE employee, claim and review opportunities. Use when the person asks about social posts their streams collected, creators to work with, or their social streams. It reads what the project's streams collected; it does not search for new companies or people."
+allowed-tools: get_social_opportunities socialstreams_list_streams socialstreams_create_stream socialstreams_run_stream socialstreams_pause_stream socialstreams_resume_stream socialstreams_update_opportunity socialstreams_queue_outreach account_plan_status onboarding_status onboarding_start_task
 metadata:
   writes: true
   title: "BrandWell Social Streams"
@@ -21,6 +21,7 @@ Workflow:
 4. Reviewing an assigned opportunity: after reading it, record the review with socialstreams_update_opportunity action review. Use action complete only when every requested action has a confirmed outcome.
 5. Before a social action, verify the signed-in account and the exact post or author, and check for likes, comments and connection requests already made, so a retry never repeats one.
 6. For the streams themselves, call socialstreams_list_streams. To collect now, call socialstreams_run_stream; to restart a paused stream's schedule, socialstreams_resume_stream. Both spend the collection budget, so the person confirms on a card first. To stop a stream's schedule, call socialstreams_pause_stream.
+7. To set up a new stream, help the person define it first: ask what they want to find (posts to reply to, companies hiring, or creators), and on which platform. Propose a query in that source's search words, plus how often and how many results, then wait for their yes. Call socialstreams_list_streams first so you do not duplicate one. Then call socialstreams_create_stream; it is saved paused, as in the app, and spends nothing. If the person wants it collecting, create it with status active; that spends collection credits, so they approve a card that shows the stream, its schedule and results per run.
 
 Rules:
 - Confirm facts with this skill's tools before stating them; what the page shows is a starting point, not the answer. When no tool can confirm something, say so and offer BrandWell support. Never say BrandWell cannot do something unless a tool says so.

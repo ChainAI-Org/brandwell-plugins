@@ -1,7 +1,7 @@
 ---
 name: brandwell-plans
 description: "Platform plans and usage: what the plan includes and how much of it is used, compare plan options and prices, prepare an upgrade, extra project, extra Intent Scans or TrafficID overage for the owner to confirm, and ask BrandWell sales. Use for 'what does my plan include', 'how many exports are left', 'upgrade me', 'what would the next plan cost'. The Workflow Wallet and spending limits are in brandwell-wallet."
-allowed-tools: account_plan_status plan_meters plan_options plan_estimate plan_prepare_change plan_upgrade_link plan_add_project plan_buy_intent_pulls plan_set_trafficid_overage plan_contact_sales pricing_list wallet_status
+allowed-tools: account_plan_status plan_meters plan_options plan_estimate plan_prepare_change plan_upgrade_link plan_add_project plan_buy_intent_pulls plan_set_trafficid_overage plan_contact_sales pricing_list wallet_status team_invite_link projects_list projects_create
 metadata:
   title: "Plans and usage"
   service: account
@@ -21,3 +21,7 @@ Plan changes, extra projects, extra Intent Scans and enabled TrafficID overage p
 Disabling auto top-up and choosing capped TrafficID stop future paid activity and can apply directly. Do not turn these back on without the owner's fresh page confirmation. Billing changes and statements require a non-impersonating account administrator. A read-only member can still inspect permitted usage and plan reads.
 
 plan_contact_sales sends a plan request only after a fresh human approval of its topic and full message. It cannot use automatic approval. A recorded request is not proof that email was sent; report the returned notification state honestly and preserve the receipt for follow-up.
+
+To invite a teammate, call team_invite_link with the name, email, role and projects the person gave. A teammate takes a paid AIMEE seat, so agents never add the user or charge anything: return its open link, say the seat price it returns, and tell the person to review the form and add the user in BrandWell. If it says the plan has no AIMEE, point to the plans that include it.
+
+projects_list shows the account's projects so the person can pick one by name. projects_create makes a new project from a name and website domain, free, after the person confirms; it opens in BrandWell, not in this connection's current project.

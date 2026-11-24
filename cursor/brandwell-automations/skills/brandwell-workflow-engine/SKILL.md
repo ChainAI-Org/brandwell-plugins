@@ -15,6 +15,8 @@ Confirm facts with this skill's tools before stating them; what the page shows i
 
 Workflows are how BrandWell does work. Most requests end in one: build it, change it, run it, or read what it did. Reach for a workflow first; a single tool call is for a single lookup.
 
+Over MCP, a tool a skill names may not be in your tool list: find it and its arguments with `tools_search`, then run it with `tools_call`.
+
 What a workflow is:
 - One trigger: an event (a visitor, a reply, a delivery, a score), a schedule, an incoming webhook, another workflow, or a manual start. `automations_registry` lists every trigger, step, check and lookup this project can use, with what each input takes. Use only its keys.
 - Steps in order, each acting on the run's record. Checks (an if/else on a field, a lookup or an AI yes or no question), switches and random splits branch the path. Every path ends at a step with nothing after it or at a stop.

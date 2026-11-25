@@ -1,6 +1,6 @@
 # Recipe index
 
-12 outcomes and 316 recipes. Generated from the stored recipes. Read the full recipe with recipes_get before using one.
+12 outcomes and 317 recipes. Generated from the stored recipes. Read the full recipe with recipes_get before using one.
 
 ## Account research
 
@@ -130,6 +130,7 @@
 - `enrich-and-verify.enrich-every-form-signup`: Checks each new signup address, fills in the person and company, finds a work email for anyone who signed up with a personal address, and saves ICP fits to a...
 - `enrich-and-verify.fill-missing-titles-and-sizes`: Every night, fills missing job titles and company sizes from included BrandWell data data only, so segments and routing rules work on complete records.
 - `enrich-and-verify.find-domains-for-company-names`: For companies in your list with a name but no website, finds the domain and fills in the company details.
+- `enrich-and-verify.find-every-social-profile`: Starts from an email, LinkedIn URL or name and company, finds the person's LinkedIn profile, builds the full profile, then checks X, GitHub, Instagram, TikTo...
 - `enrich-and-verify.find-missing-work-emails`: For everyone in an audience without a work email, tries BrandWell data first and then a waterfall of providers until one finds and verifies an address.
 - `enrich-and-verify.linkedin-urls-into-contacts`: For each LinkedIn profile you upload, reads the name, title and company, then finds and verifies a work email and saves the contact.
 - `enrich-and-verify.match-emails-to-linkedin`: For people with a work email but no LinkedIn profile, finds the matching profile, reads their headline and location, and saves them to a LinkedIn-ready audie...

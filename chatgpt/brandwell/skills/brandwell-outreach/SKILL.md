@@ -1,7 +1,7 @@
 ---
 name: brandwell-outreach
 description: "Work with BrandWell Outreach: read email campaigns and what one campaign sends, continuous feeds and intake lists, add contacts to a tagged intake list, write or rewrite an email campaign as a saved draft, change a saved campaign's settings and emails, send a test, start, pause or resume a campaign, enroll chosen people, create or switch feeds, and prepare an order of sending domains and inboxes for the person to buy. Use when the person asks about their email campaigns, where contacts flow in, wants people added, wants an email campaign created, rewritten, changed, tested, started or paused, or wants more inboxes or domains to send from."
-allowed-tools: outreach_campaigns outreach_campaign outreach_feeds outreach_intake_sources outreach_add_contacts outreach_workspace outreach_fields outreach_create_campaign_draft outreach_import_status outreach_import_contacts outreach_update_campaign outreach_update_steps outreach_send_test_email outreach_set_campaign_state outreach_enroll_preview outreach_enroll_confirm outreach_create_feed outreach_set_feed_state onboarding_status onboarding_start_task campaign_offer_get campaign_offer_save outreach_infra_offer outreach_domains_search outreach_order_link
+allowed-tools: outreach_campaigns outreach_campaign outreach_feeds outreach_intake_sources outreach_add_contacts outreach_workspace outreach_fields outreach_create_campaign_draft outreach_import_status outreach_import_contacts outreach_update_campaign outreach_update_steps outreach_send_test_email outreach_set_campaign_state outreach_enroll_preview outreach_enroll_confirm outreach_create_feed outreach_set_feed_state onboarding_status onboarding_start_task campaign_offer_get campaign_offer_save outreach_infra_offer outreach_domains_search outreach_order_link outreach_domains outreach_workflows outreach_plans outreach_prepare_tier_change outreach_prepare_inbox_change
 metadata:
   writes: true
   title: "BrandWell Outreach"
@@ -55,6 +55,11 @@ Buying sending domains and inboxes (the person wants more inboxes or domains to 
 2. Find new domains with outreach_domains_search and let the person choose them.
 3. Call outreach_order_link with the order. Show the person its line items and total today, what it adds a month after that, and send them its confirm_url. It opens the order form at its review step; nothing is bought until they press Buy there.
 4. Never say an order was placed or paid for: no agent call buys or charges anything. Once bought, the inboxes are set up and warmed up on their own at no cost, which takes about two weeks before full sending.
+
+Sending domains, workflows and the Outreach plan (what Outreach's own pages show):
+1. outreach_domains lists every sending domain with its registrar, connection status and expiry, and the person's own domains being connected. A registered domain is not ready to send until its inboxes are connected.
+2. outreach_workflows reads Campaign sources and workflows: whether portal workflows run, the notification rules, Direct Mail return events, LinkedIn follow-ups and recent deliveries. Read the feeds and intake lists with outreach_feeds.
+3. outreach_plans lists the account's Outreach plans as Settings > Billing does. To change a contact tier or the number of paid inboxes, call outreach_prepare_tier_change or outreach_prepare_inbox_change and send the person its confirm_url: the account owner confirms it in Settings > Billing, and nothing is charged before that.
 
 Following up on engagement (an open, a click or a reply from a campaign, or an automation instruction for one contact):
 1. An email open is inferred and does not prove the person read it. Conversation-level opens and clicks cannot identify which recipient engaged.
